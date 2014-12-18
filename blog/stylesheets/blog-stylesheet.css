@@ -20,5 +20,7 @@ img{width:200px;
 main{
   background-color: #999999;
   margin:0 auto;
+  height: 100%;
 }
 .logo{background-color: orange}
+footer{background-color: orange;height:50px;}
