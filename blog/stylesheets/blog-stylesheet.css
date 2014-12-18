@@ -12,7 +12,7 @@ img{width:200px;
 
 .container{
   width:960px;
-  margin:60px auto;
+  margin:0 auto;
   border-left:4px solid #000000;
   border-right:4px solid #000000;
   padding:0 20px;
@@ -22,7 +22,7 @@ img{width:200px;
 }
 main{
 
-  margin:0 auto;
+  margin:60 auto;
   min-height: 100%;
 }
 .logo{
