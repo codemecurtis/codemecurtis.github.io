@@ -1,94 +1,83 @@
 <!DOCTYPE html>
+<html>
 <head>
-  <title>Curtis Seaton - Hashes, Arrays &amp; more</title>
+  <title>Personal Blog for Curtis Seaton - Hashes &amp; Arrays for days!</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
 </head>
 
-<main>
-  <div class="container">
-  <div class="logo">
-    <img src="logo.png" alt="DBC Logo" />
-  </div>
-<div class="content">
-  <h4 class="date">1/12/15</h4>
-  <h1 class="title">Hashes &amp; Arrays for days!</h1>
+  <body>
+      <div class="container">
+        <div class="logo">
+          <img src="logo.png" alt="DBC Logo" />
+        </div>
+        <div class="content">
+          <h4 class="date">1/12/15</h4>
+          <h1 class="title">Hashes &amp; Arrays for days!</h1>
 
-  <section>
+          <section>
 
-    <p>
-      Arrays and hashes are a lot a like. Essentially they hold certain values for access in your code for starters. Once I tell you the purpose of arrays and hashes I will explain how we can utilize these to our advantage and what the differences are.
-    </p>
+            <p>
+              Arrays and hashes are a lot a like. Essentially they hold certain values for access in your code for starters. Once I tell you the purpose of arrays and hashes I will explain how we can utilize these to our advantage and what the differences are.
+            </p>
 
-      <h3>Arrays</h3>
+              <h3>Arrays</h3>
 
-        <p>
-          Arrays can contain multiple different values such as strings, integers and even other arrays. Those arrays inside of arrays are considered sub arrays, pretty clever right? Your probably thinking well what how do I use these values or even sperate them. Vey good question and below you will see example 1.1(Empty Hash) and 1.2(Standard Hash).
-        </p>
+                <p>
+                  Arrays can contain multiple different values such as strings, integers and even other arrays. Those arrays inside of arrays are considered sub arrays, pretty clever right? Your probably thinking well what how do I use these values or even sperate them. Vey good question and below you will see example 1.1(Empty Hash) and 1.2(Standard Hash).
+                </p>
 
-          <code>
-            my_array = []
-          </code>
-          <p>Example 1.1</p>
-          <code>
-            my_array = ["A String", 10, ["Sub array string"]]
-          </code>
-          <p>Example 1.2</p>
+                  <code>my_array = []</code>
+                  <p>Example 1.1</p>
 
-        <p>
-          As you can see above that I seperated my values inside the array with a simple <i>,</i> somehow some wat ruby knows how to seperate them but that goes with everything else ruby does on it's own :). Now that you know how to create an array go have some funa and see if you can find a god use before paragraph 3 when I show you examples.
-        </p>
+                  <code>my_array = ["A String", 10, ["Sub array string"]]</code>
+                  <p>Example 1.2</p>
 
-        <p>
-          Accessing array values is just as simple as creatinf them. In example 1.3(Accessing array values) I will show you how to do this.
-        </p>
+                <p>
+                  As you can see above that I seperated my values inside the array with a simple <i>,</i> somehow some wat ruby knows how to seperate them but that goes with everything else ruby does on it's own :). Now that you know how to create an array go have some funa and see if you can find a god use before paragraph 3 when I show you examples.
+                </p>
 
-        <code>
-          my_array[0]
-        </code>
-        <p>Exmaple 1.3</p>
+                <p>
+                  Accessing array values is just as simple as creatinf them. In example 1.3(Accessing array values) I will show you how to do this.
+                </p>
 
-      <p>
-        I specifically used this example because I want you to understand that in programming almost all the time you will start couting at 0. If you take a look back at example 1.2 I will break this down for you. "A String" is the first value or [0], the number 10 is the scond value or [1] and so on so forth. I like to remember to start my count at 0 but some people may prefer to take the what I would call real world number and subtract 1. As a programmer we would say well that thought should be refactored, catch my drift? All in all arrays are pretty simple for now but later on down the road I am sure I will have a lot more to say about their complextiy.
-      </p>
+                <code>my_array[0]</code>
+                <p>Exmaple 1.3</p>
 
-      <h3>Hashes</h3>
+              <p>
+                I specifically used this example because I want you to understand that in programming almost all the time you will start couting at 0. If you take a look back at example 1.2 I will break this down for you. "A String" is the first value or [0], the number 10 is the scond value or [1] and so on so forth. I like to remember to start my count at 0 but some people may prefer to take the what I would call real world number and subtract 1. As a programmer we would say well that thought should be refactored, catch my drift? All in all arrays are pretty simple for now but later on down the road I am sure I will have a lot more to say about their complextiy.
+              </p>
 
-      <p>
-        Hashes are a lot like arrays as well, they both have a value but hashes have a more visible key as well. In example 2.1 I am showing you how to create new hash. This will create a a hash with the key and value of <i>nil</i>. There are nemours ways to create a hash but in example 2.2 I will show you our most used method so far.
-      </p>
+              <h3>Hashes</h3>
 
-        <code>
-          Hash.new
-        </code>
-          <p>Example 2.1</p>
-        <code>
-          my_hash = { "Jane Doe" => 10, "John Doe" => 6 }
-        </code>
-          <p>Example 2.2</p>
+              <p>
+                Hashes are a lot like arrays as well, they both have a value but hashes have a more visible key as well. In example 2.1 I am showing you how to create new hash. This will create a a hash with the key and value of <i>nil</i>. There are nemours ways to create a hash but in example 2.2 I will show you our most used method so far.
+              </p>
 
-      <p>
-        As you can see the <i>my_hash</i> example makes a little more sense to look at so we will reference this for now. You can see here that both the Jane Doe and John Doe are the keys. Which makes the two integers 10 and 6 are the values. In hashes the key and value are seperated by a <i>=></i>. In order to access these values take a look at example 2.3. The semi colon can replace the quotes in this situation and this goes for creating them as well.
-      </p>
+                <code>Hash.new</code>
+                  <p>Example 2.1</p>
 
-        <code>
-          grades["Jane Doe"]
-          <span>or</span>
-          grades[:jane Doe]
-        </code>
-          <p>Example 2.3</p>
+                <code>my_hash = { "Jane Doe" => 10, "John Doe" => 6 }</code>
+                  <p>Example 2.2</p>
 
-      <p>
-        The biggest difference between hashes and arrays are how they are created obviously but beyond that I am sure you noticed that hashes have a key and value pair rather than just a value. I am sure you can imagine how this will be helpful. Arrays are also an ordered list where as hash values are related to their key. Though not as fun as hashes, arrays have keys as well but they are integer based meaning the numbers I showed you earlier are the keys.
-      </p>
+              <p>
+                As you can see the <i>my_hash</i> example makes a little more sense to look at so we will reference this for now. You can see here that both the Jane Doe and John Doe are the keys. Which makes the two integers 10 and 6 are the values. In hashes the key and value are seperated by a <i>=></i>. In order to access these values take a look at example 2.3. The semi colon can replace the quotes in this situation and this goes for creating them as well.
+              </p>
+
+                <code>grades["Jane Doe"]<span>or</span>grades[:jane Doe]</code>
+                  <p>Example 2.3</p>
+
+              <p>
+                The biggest difference between hashes and arrays are how they are created obviously but beyond that I am sure you noticed that hashes have a key and value pair rather than just a value. I am sure you can imagine how this will be helpful. Arrays are also an ordered list where as hash values are related to their key. Though not as fun as hashes, arrays have keys as well but they are integer based meaning the numbers I showed you earlier are the keys.
+              </p>
 
 
-  </section>
-  <footer>
-    &nbsp;
-  </footer>
-</div>
-</div>
-</main>
-
+          </section>
+          <footer>
+            &nbsp;
+          </footer>
+        </div>
+      </div>
+  </body>
+</html>
