@@ -55,3 +55,6 @@ footer{
 }
 
 .learning-styles li{margin-bottom: 15px;}
+code{
+  font-family: monospace;
+}
