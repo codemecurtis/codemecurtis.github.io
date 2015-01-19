@@ -1,0 +1,112 @@
+body{color: #FFFFFF;font-family: 'Open Sans';background-color: #ececec;}
+h1, h2{text-align: center;}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+.left-fixed{
+  width:35%;
+  height: 100%;
+  background-image: url('../../imgs/bg.jpg');
+  background-size: 100%;
+  position: fixed;
+  text-shadow: 2px 2px 2px #555555;
+}
+.right{
+  float: right;
+  width: 65%;
+}
+.heading, .title{
+  font-size:40px;
+  font-weight: 600;
+  margin-top: 10px
+}
+.sub-heading{
+  font-size: 24px;
+}
+.main-image{
+  width:250px;
+  height: 250px;
+  border-radius: 250px;
+  position: relative;
+  left: 25%;
+  border: 1px solid #FFFFFF;
+  margin: 25px 0 0 0;
+}
+.right{
+  margin: 0 0 0 10px;
+  color: #000000;
+}
+.recent-title{
+  font-size: 28px;
+  text-align: center;
+  margin-top: 15px;
+}
+.recent{
+  left:25%;
+  position: relative;
+  width: 75%;
+}
+.recent li{
+  margin-top: 10px;
+  list-style-type:circle;
+}
+.recent li a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.recent li a:hover{
+  color:#888888;
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons{margin-left:25%;}
+.social-icons .fa{
+  margin:10px;
+}
+.social-icons .fa:hover{
+  color:#888888;
+}
+
+/* Featured Posts */
+.featured-posts .date{
+  float: right;
+  margin-top: 15px;
+}
+.featured-posts .subtitle{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.featured-posts .post{
+  margin: 20px 10px;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #000000;
+}
+.featured-posts img{display: none;}
+.featured-posts .summary{
+  margin:10px 0 0 0;
+  text-align: justify;
+  line-height: 20px;
+}
+.featured-posts .read-more{
+  color: orange;
+  text-decoration: none;
+}
+.footer p{text-align: center;margin-bottom: 20px;}
