@@ -1,4 +1,4 @@
-body{color: #FFFFFF;font-family: 'Raleway'; font-weight: light;}
+body{color: #FFFFFF;font-family: 'Raleway'; font-weight: light;background-color: #000000;}
 a{color:#68979B;}
 h1, h2{text-align: center;}
 blockquote {
@@ -23,6 +23,8 @@ blockquote p {
   width:35%;
   height: 100%;
   background-image: url('../../imgs/bg.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: 100%;
   position: fixed;
   text-shadow: 2px 2px 2px #555555;
@@ -31,6 +33,7 @@ blockquote p {
 .right{
   float: right;
   width: 65%;
+  background-color: #F5F5F5;
 }
 .heading, .title{
   font-size:40px;
@@ -98,7 +101,7 @@ blockquote p {
 .featured-posts .date{
   float: right;
   margin-top: 15px;
-  color: #013034;
+  color: #1D433B;
 }
 .featured-posts .subtitle{
   font-size: 24px;
@@ -119,7 +122,7 @@ blockquote p {
 }
 .featured-posts .summary p{margin-bottom: 15px;}
 .featured-posts .read-more{
-  color: #013034;
+  color: #1D433B;
   text-decoration: none;
 }
 .footer p{text-align: center;margin-bottom: 20px;}
