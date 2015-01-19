@@ -39,13 +39,16 @@ blockquote p {
   font-size: 24px;
 }
 .main-image{
-  width:250px;
-  height: 250px;
-  border-radius: 250px;
+  width: 160px;
   position: relative;
-  left: 25%;
+  margin: 0 auto;
+}
+.main-image img{
+  margin-top: 25px;
+  width:160px;
+  height: 160px;
+  border-radius: 160px;
   border: 1px solid #FFFFFF;
-  margin: 25px 0 0 0;
 }
 .right{
   margin: 0 0 0 10px;
@@ -57,9 +60,9 @@ blockquote p {
   margin-top: 15px;
 }
 .recent{
-  left:25%;
   position: relative;
-  width: 75%;
+  width: 230px;
+  margin:0 auto;
 }
 .recent li{
   margin-top: 10px;
@@ -75,7 +78,10 @@ blockquote p {
 }
 
 /* Social Icons */
-.social-icons{margin-left:25%;}
+.social-icons{
+  width:255px;
+  margin: 0 auto;
+}
 .social-icons .fa{
   margin:10px;
 }
