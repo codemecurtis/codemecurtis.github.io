@@ -79,7 +79,8 @@ blockquote p {
 .social-icons .fa{
   margin:10px;
 }
-.social-icons .fa:hover{
+.social-icons a{color: #FFFFFF;}
+.social-icons a:hover{
   color:#888888;
 }
 
