@@ -1,0 +1,124 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1295" measuredH="945" mockupW="1240" mockupH="937">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="55" y="8" w="1240" h="730" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Paragraph" x="78" y="503" w="450" h="172" measuredW="275" measuredH="80" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Vestibulum%20vitae%20ultrices%20tellus.%20Donec%20mollis%20in%20tortor%20in%20maximus.%20Morbi%20et%20blandit%20nisi.%20Pellentesque%20cursus%20dignissim%20lectus%20et%20imperdiet.%20Pellentesque%20mollis%20ut%20magna%20vulputate%20ullamcorper.%20Cras%20mi%20est%2C%20interdum%20non%20sapien%20eget%2C%20congue%20maximus%20nisl.%20Quisque%20elit%20nunc%2C%20dapibus%20eu%20hendrerit%20quis%2C%20posuere%20sed%20erat.%20Nam%20et%20nisi%20quis%20metus%20congue%20convallis.%20Sed%20ac%20purus%20bibendum%2C%20vulputate%20mauris%20a%2C%20imperdiet%20tellus.%20Curabitur%20ac%20malesuada%20urna.%20Suspendisse%20egestas%20ante%20et%20magna%20pharetra%20aliquam.%20Mauris%20quis%20hendrerit%20est%2C%20eget%20dictum%20justo.%20Curabitur%20viverra%20gravida%20ipsum%2C%20eu%20venenatis%20massa%20semper%20volutpat.%20Morbi%20ligula%20tortor%2C%20cursus%20sit%20amet%20ullamcorper%20et%2C%20dictum%20vitae%20eros.%20Pellentesque%20sodales%20sagittis%20nisl%2C%20in%20commodo%20sapien%20aliquet%20a.%20Sed%20non%20sagittis%20nisl%2C%20at%20suscipit%20dolor.</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::RoundButton" x="178" y="180" w="250" h="250" measuredW="32" measuredH="32" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Icon" x="220" y="456" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>FacebookIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Icon" x="256" y="456" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>TwitterIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="292" y="456" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>LinkedInIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Icon" x="331" y="456" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>EmailIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Icon" x="363" y="456" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>LinkGlobeIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Title" x="160" y="90" w="-1" h="-1" measuredW="286" measuredH="43" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Code%20Me%20Curtis</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::SubTitle" x="185" y="133" w="-1" h="-1" measuredW="236" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>The%20DBC%20%26%20More%20Blog</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Title" x="568" y="151" w="-1" h="-1" measuredW="171" measuredH="43" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Blog%20Title</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="1230" y="162" w="-1" h="-1" measuredW="42" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>1/18/15</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::SubTitle" x="568" y="194" w="-1" h="-1" measuredW="149" measuredH="27" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <text>Short%20Subtitle</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Paragraph" x="568" y="235" w="704" h="297" measuredW="275" measuredH="80" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Nam%20elementum%2C%20dui%20ut%20interdum%20pulvinar%2C%20dui%20ante%20elementum%20tortor%2C%20in%20imperdiet%20ligula%20turpis%20nec%20urna.%20Cras%20vel%20ligula%20nec%20mi%20pellentesque%20condimentum.%20Maecenas%20at%20sapien%20sit%20amet%20felis%20porttitor%20eleifend%20non%20nec%20justo.%20Duis%20pharetra%20quam%20eget%20dui%20volutpat%20efficitur.%20Donec%20metus%20eros%2C%20posuere%20ut%20volutpat%20at%2C%20cursus%20non%20augue.%20Vestibulum%20tincidunt%2C%20nisi%20ut%20blandit%20facilisis%2C%20nisi%20eros%20facilisis%20elit%2C%20nec%20mollis%20enim%20arcu%20sagittis%20tortor.%20Donec%20laoreet%20purus%20urna%2C%20eu%20porttitor%20dolor%20suscipit%20vitae.%20Proin%20et%20condimentum%20sapien.%20Duis%20posuere%20ex%20ex.%0A%20%0AMauris%20interdum%20vehicula%20felis%2C%20at%20vehicula%20elit%20auctor%20consequat.%20Suspendisse%20non%20sapien%20id%20mi%20molestie%20venenatis.%20In%20pellentesque%20viverra%20augue%2C%20ut%20semper%20risus%20dapibus%20in.%20Integer%20sodales%20ligula%20sed%20rhoncus%20gravida.%20Nunc%20facilisis%2C%20elit%20sed%20pulvinar%20iaculis%2C%20velit%20est%20pulvinar%20quam%2C%20vel%20hendrerit%20ante%20dolor%20in%20massa.%20Etiam%20sagittis%20facilisis%20tempor.%20Sed%20feugiat%20tempor%20dignissim.%20Vestibulum%20pretium%20scelerisque%20massa%20quis%20tincidunt.%20Duis%20at%20lectus%20hendrerit%2C%20vehicula%20magna%20nec%2C%20fringilla%20dolor.%0A%20%0ASed%20lacinia%20et%20erat%20vitae%20vulputate.%20Sed%20bibendum%20fringilla%20ex.%20Cum%20sociis%20natoque%20penatibus%20et%20magnis%20dis%20parturient%20montes%2C%20nascetur%20ridiculus%20mus.%20Phasellus%20pretium%20viverra%20lacus%2C%20condimentum%20convallis%20ligula%20dignissim%20et.%20Integer%20velit%20velit%2C%20laoreet%20nec%20rutrum%20eget%2C%20egestas%20at%20nisi.%20Integer%20nisi%20magna%2C%20bibendum%20rutrum%20urna%20eu%2C%20aliquet%20volutpat%20ante.%20Quisque%20ac%20arcu%20ac%20turpis%20porta%20facilisis%20tempor%20et%20leo.%20Donec%20eu%20sapien%20eget%20mauris%20rutrum%20rutrum%20eu%20et%20arcu.%20Morbi%20eget%20lorem%20lacus.%20Aliquam%20auctor%20consectetur%20lectus%20vel%20interdum.%20Nullam%20sed%20massa%20rhoncus%2C%20pharetra%20risus%20id%2C%20tincidunt%20lorem.%20Nunc%20ac%20risus%20consequat%2C%20dignissim%20leo%20vitae%2C%20tempus%20diam.</text>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Link" x="1027" y="513" w="-1" h="-1" measuredW="74" measuredH="19" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Read%20More....</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::HRule" x="568" y="546" w="704" h="-1" measuredW="100" measuredH="10" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="21" controlTypeID="com.balsamiq.mockups::Title" x="568" y="564" w="-1" h="-1" measuredW="171" measuredH="43" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Blog%20Title</text>
+      </controlProperties>
+    </control>
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::Label" x="1230" y="575" w="-1" h="-1" measuredW="42" measuredH="21" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>1/18/15</text>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::SubTitle" x="568" y="607" w="-1" h="-1" measuredW="149" measuredH="27" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <italic>true</italic>
+        <text>Short%20Subtitle</text>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::Paragraph" x="568" y="648" w="704" h="297" measuredW="275" measuredH="80" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Nam%20elementum%2C%20dui%20ut%20interdum%20pulvinar%2C%20dui%20ante%20elementum%20tortor%2C%20in%20imperdiet%20ligula%20turpis%20nec%20urna.%20Cras%20vel%20ligula%20nec%20mi%20pellentesque%20condimentum.%20Maecenas%20at%20sapien%20sit%20amet%20felis%20porttitor%20eleifend%20non%20nec%20justo.%20Duis%20pharetra%20quam%20eget%20dui%20volutpat%20efficitur.%20Donec%20metus%20eros%2C%20posuere%20ut%20volutpat%20at%2C%20cursus%20non%20augue.%20Vestibulum%20tincidunt%2C%20nisi%20ut%20blandit%20facilisis%2C%20nisi%20eros%20facilisis%20elit%2C%20nec%20mollis%20enim%20arcu%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="__group__" x="55" y="81" w="500" h="629" measuredW="500" measuredH="629" zOrder="1" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="500" h="629" measuredW="500" measuredH="629" zOrder="0" locked="false" isInGroup="27">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Image" x="0" y="0" w="500" h="629" measuredW="1080" measuredH="1920" zOrder="0" locked="false" isInGroup="0">
+              <controlProperties>
+                <src>./imgs/bg.jpg</src>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="30" controlTypeID="com.balsamiq.mockups::HRule" x="559" y="134" w="736" h="-1" measuredW="100" measuredH="10" zOrder="21" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
