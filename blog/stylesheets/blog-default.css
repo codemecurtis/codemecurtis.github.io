@@ -66,6 +66,13 @@ blockquote p {
   margin-top: 15px;
   font-family: 'Dancing Script'
 }
+.home a{
+  font-size: 50px;
+  text-decoration: none;
+}
+.home a:hover{
+  color: #AAAAAA;
+}
 .recent{
   position: relative;
   width: 240px;
