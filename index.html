@@ -3,89 +3,146 @@
 <head>
   <meta charset="utf-8">
   <title>Curtis Seaton's DBC Journey</title>
-  <!-- <link rel="stylesheet" href="blog/stylesheets/blog-stylesheet.css"> -->
-  <link rel="stylesheet" href="stylesheets/default.css">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" type="text/css" href="blog/stylesheets/reset.css">
+
+  <!-- Index Styles -->
+  <link rel="stylesheet" href="stylesheets/default-beta.css">
+
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,200,700' rel='stylesheet' type='text/css'>
+
+  <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-  <body>
-      <div class="container">
-        <nav class="main-nav">
-          <h1>Code Me Curtis</h1>
-          <ul class="menu">
-            <li>
+    <body>
+      <section class="about">
+        <ul class="nav">
+          <li>
               <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
             </li>
             <li>
               <a href="#skills">Skills</a>
             </li>
-            <!-- <li>
-              <a href="#">Projects</a>
-            </li> -->
             <li>
               <a href="blog/index.html">Blog</a>
             </li>
+        </ul>
+        <div class="logo">
+          <h1 class="heading">Code Me Curtis</h1>
+          <h2 class="sub-heading">The DBC Experience &amp; More.</h2>
+        </div>
+
+        <div class="main-image">
+          <img class="main-image" src="imgs/me.jpg" alt="Curtis Seaton">
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/curtis.seaton.3" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+          <a href="https://twitter.com/CodeMeCurtis" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/codemecurtis" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+          <a href="mailto:infin80design@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+          <a href="https://github.com/infin80design" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        </div>
+
+          <p class="recent-title">About Curtis</p>
+          <div class="about-me">
+            <p>
+              My name is Curtis Seaton, I live in the sunny bay area. My early experience with coding started in High school with the launch of Myspace, I would spend my free time after school and on weekends customizing layouts for friends using HTMl and inline CSS.
+            </p>
+
+              <p>&nbsp;</p><br>
+
+            <p>
+              I look forward to continuing my education in the industry witht he great help of DBC. I will be learning not only new languages such as AJAX, Ruby &amp; Ruby on Rails, I will be learning how to act, learn and prefect the life of a developer.
+            </p>
+          </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+          <li><img src="imgs/html5.png" alt="HTML5"></li>
+          <li><img src="imgs/git.png" alt="Git"></li>
+          <li><img src="imgs/ruby.png" alt="Ruby"></li>
+          <li><img src="imgs/jquery.png" alt="jQuery"></li>
+          <li><img src="imgs/css3.png" alt="CSS3"></li>
+        </ul>
+      </section>
+      <section id="blog" class="blog">
+        <h2 class="heading">Featured Posts</h2>
+        <ul>
+          <li class="post">
+                      <h3 class="title">Enumerable Method's</h3>
+                      <div class="summary">
+                        <p>
+                          Enumerable is simply a collection of methods that iterate through a collection of objects and run the following block. I am sure that went over your head so let me break it down for you. Lets start with iterating this is the act of separating each element and providing it an action is what is called a block. I will give you an example.
+                        </p>
+                        <a href="t4-enumerable-methods.html" class="read-more">Read More....</a>
+                      </div>
+          </li>
+          <li class="post">
+                      <h3 class="title">The missing minorites in Tech</h3>
+                      <div class="summary">
+                        <p>
+                          I remember sometime about a year ago I was reading a story about how @Twiiter wasn't meeting the global standards for minorites and it gave me that much more of a push to make a change for this. As of now there is only 6.1 percent of the industry which is a underrepresented women or minority says <a href="http://www.insightintodiversity.com/" target="_blank">Insight to Diversity</a>.
+                        </p>
+                        <a href="c4-tech-issues.html" class="read-more">Read More....</a>
+                      </div>
+          </li>
+          <li class="post">
+                      <h3 class="title">Concrete Sequential Thinking</h3>
+                      <div class="summary">
+                        <p>
+                          As a concrete sequential thinker it is very hard to steer away from my plan. I like to think staright forward and in a pre planned process. As some will say I like to have a plan for a plan but that is just them. Now your probably wondering where is this genious even getting his information from well it's from a gentlmen by the name of <a href="http://en.wikipedia.org/wiki/Anthony_Gregorc">Anthony Gregorc.</a>
+                        </p>
+                        <a href="c3_thinking-style.html" class="read-more">Read More....</a>
+                      </div>
+          </li>
+        </ul>
+        <h3 class="read"><a href="blog/index.html">View Blog</a></h3>
+      </section>
+      <!-- <section class="portfolio">
+        <h2 class="heading">My Work</h2>
+        <div class="work">
+          <ul>
+            <li><img src="imgs/me.jpg" alt="">
+                <h4>
+                  <p>This is a short context.</p>
+                </h4>
+              </img></li>
+            <li><img src="imgs/me.jpg" alt="">
+                <h4>
+                  <p>This is a short context.</p>
+                </h4>
+              </img></li>
+            <li><img src="imgs/me.jpg" alt="">
+                <h4>
+                  <p>This is a short context.</p>
+                </h4>
+              </img></li>
+            <li><img src="imgs/me.jpg" alt="">
+                <h4>
+                  <p>This is a short context.</p>
+                </h4>
+              </img></li>
+            <li><img src="imgs/me.jpg" alt="">
+                <h4>
+                  <p>This is a short context.</p>
+                </h4>
+              </img></li>
           </ul>
-        </nav>
-            <div class="content">
-              <section id="about">
-                  <h2 class="section-heading">
-                    <span>Curtis Charles Seaton</span><br>
-                  </h2>
-                  <img src="imgs/me.jpg" alt="Me"/>
-                  <p class="about-me">
-                    My name is Curtis Seaton, I live in the sunny bay area. My early experience with coding started in High school with the launch of Myspace, I would spend my free time after school and on weekends customizing layouts for friends using HTMl and inline CSS.</p>
-                          <p>&nbsp;</p>
-                    <p class="about-me">I look forward to continuing my education in the industry witht he great help of DBC. I will be learning not only new languages such as AJAX, Ruby &amp; Ruby on Rails, I will be learning how to act, learn and prefect the life of a developer.
-                  </p>
-                  <a href="blog/index.html" class="read-more">Read My Blog</a>
-                </section>
-                <section id="skills">
-                  <h2 class="section-heading">Skills</h2>
-                  <div>
-                  <ul class="skill left-content">
-                    <p class="heading">Languages</p>
-                    <li>HTML &amp; CSS</li>
-                    <li>Git</li>
-                    <li>PHP</li>
-                  </ul>
-                  <!-- <ul class="skill middle-content">
-                    <p class="heading">Programs</p>
-                    <li>Adobe Photoshop</li>
-                    <li>HTML &amp; CSS</li>
-                    <li>HTML &amp; CSS</li>
-                  </ul> -->
-                  <ul class="skill right-content">
-                    <p class="heading">Tools</p>
-                    <li>Sublime Text 2</li>
-                    <li>Github.com</li>
-                    <li>Balsamiq Mockup</li>
-                  </ul>
-                  </div>
-                </section>
-                <!-- <section id="projects">
-                  <h2 class="section-heading">Projects</h2>
-                  <ul class="projects">
-                    <li class="items">
-                      <div class="title">Item 1</div>
-                      <p class="caption">This is a Caption</p>
-                    </li>
-                    <li class="items">
-                      <div class="title">Item 2</div>
-                      <p class="caption">This is a Caption</p>
-                    </li>
-                    <li class="items">
-                      <div class="title">Item 3</div>
-                      <p class="caption">This is a Caption</p>
-                    </li>
-                  </ul>
-                </section> -->
-            </div>
-            <div class="div footer">
-              <p>&copy; 2015 Curtis Seaton</p>
-            </div>
+        </div>
+      </section> -->
+
+      <div class="footer">
+        <p>&copy; 2015 Curtis Seaton</p>
       </div>
   </body>
 </html>

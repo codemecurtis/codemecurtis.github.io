@@ -1,141 +1,179 @@
-*{margin:0;font-family: 'open-sans' sans-serif;font-weight: 400}
-body{background-color: #FFFFFF;}
-p{display: static;}
-ul{list-style-type: none;padding: 0;}
-h1{text-transform: uppercase;}
+body{color: #FFFFFF;font-family: 'Raleway'; font-weight: 300;}
+a{color:#68979B;text-decoration: none;}
+h1, h2{text-align: center;}
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+code{font-family: monospace;}
+.about{
+  background-image: url('../imgs/large-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  text-shadow: 2px 2px 2px #000000;
+  font-family: 'Quicksand';
+  font-weight: 400;
+  width:100%;
+  box-shadow: 0 1px 30px #000000;
+}
+.nav{
+  float: right;
+  margin-top:20px;
+  font-size: 25px;
+}
+.nav li{
+  display: inline-block;
+  text-align: left;
+  margin-right: 30px;
+}
+.nav li a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.nav li a:hover{color: #68979B;}
+.logo{
+  text-align: center;
+  width: 385px;
+  margin-left:20px;
+}
+.heading{
+  font-size: 70px;
+  font-family: "Dancing Script";
+}
+.sub-heading{
+  font-size: 24px;
+}
+.about-me p{background-color: rgba(0,0,0,0.3);border-radius: 10px;}
 
-.section-heading{text-align: center;margin: 20px 0;}
-.section-heading span{font-size: 25px;}
-.container{
-  width:960px;
+.main-image{
+  width: 160px;
+  position: relative;
   margin: 0 auto;
 }
-nav.main-nav{
-  border-bottom: 1px solid #333;
-  background-color: #c2c2c2;
-  padding: 20px;
-}
-.menu{
-  float:right;
-
-  font-size: 16px;
-  position: relative;
-  top:-35px;
-}
-.menu li{
-  display: inline-block;
-  margin: 0 10px;
-  padding: 10px;
-  background-color: orange;
-  border-radius: 5px;
-}
-.menu li:hover{color:#FFFFFF;background-color: #999999}
-.menu li a{
-  text-decoration: none;
-  color:#000000;
-}
-/* About */
-#about img{
-  width:200px;
-  height: 200px;
-  float: left;
-  position: relative;
-  margin:0 20px 0 0;
+.main-image img{
+  margin-top: 25px;
+  width:160px;
+  height: 160px;
+  border-radius: 160px;
+  border: 1px solid #FFFFFF;
 }
 .about-me{
-  text-align: justify !important;
+  width:50%;
+  margin: 0 auto;
+  padding: 40px;
   font-size: 20px;
-  margin-bottom:20px;
-}
-.read-more{
-  font-size: 16px;
-  color:orange;
-  text-decoration: none;
-}
-#about .read-more{
-  float:right;
-  position: relative;
-  top: -10px;
-}
-#about .read-more:hover{color: #000000}
-section{
-  min-height:300px;
-  width:100%;
-  border-top: 1px solid #333;
-}
-
-/*Skills*/
-.skill{
-  display:inline-block;
-  width:240px;
-  min-height: 200px;
-  margin: 30px;
-  border: 1px solid #000000;
-}
-.skill li{
-  margin:20px 0;
-  padding:20px;
-}
-.skill .heading{
-  text-align: center;
-  font-size:22px;
-  margin-top: 10px;
-}
-#skills div{width:610px;margin: 0 auto;}
-
-/*Projects*/
-.projects .items{display: inline-block;}
-
-/* Footer */
-.footer{text-align: center;position:relative; top: 10px; border-top: 1px solid #000000}
-
-/* Blog */
-.content h2{
-  margin: 20px 0;
-  padding-bottom: 10px;
-  text-align: center;
-  font-size: 30px;
-}
-.post-block{width:700px;}
-.right{
-  float: right;
-  position: relative;
-  width: 250px;
-}
-.featured-posts{
-  border-right:1px solid #000000;
-  margin: 0 10px;
-}
-.featured-posts .post{
-  min-height: 300px;
-  border-top: 1px solid #000000;
-  margin: 0 0 15px 0;
   padding: 10px;
+  border-radius: 20px
 }
-
-.post .date{float:right;color:orange;text-decoration: underline;}
-.post .title{margin-bottom: 10px;font-weight: bold}
-.post .subtitle{margin-bottom: 15px;}
-
-/* Right Nav */
-aside div{min-height: 250px;}
-.right-nav{padding-left: 15px;}
-.right-heading{
-  font-size: 18px;
-  margin-bottom: 10px;
-  border-bottom: 1px dotted #C2C2C2;
-  padding-bottom: 5px;
+.recent-title{
+  font-size: 38px;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Dancing Script'
 }
-.about-short{text-align: justify;}
-.about-short .read-more{position: relative;top:5px;}
-.about-short .read-more:hover{color: #000000;text-decoration: underline;}
-.recent-posts ul{margin-left: 10px;}
-.recent-posts ul li{
-  margin: 10px 0;
+.recent{
+  position: relative;
+  width: 240px;
+  margin:0 auto;
+}
+.recent li{
+  margin-top: 10px;
   list-style-type:circle;
 }
-.recent-posts ul li a{
+.recent li a{
+  color: #FFFFFF;
   text-decoration: none;
-  color:orange;
 }
-.recent-posts ul li a:hover{text-decoration: underline;}
+.recent li a:hover{
+  color:#888888;
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons{
+  width:255px;
+  margin: 0 auto;
+}
+.social-icons .fa{
+  margin:10px;
+}
+.social-icons a{color: #FFFFFF;}
+.social-icons a:hover{
+  color:#888888;
+}
+.skills .heading, .blog .heading, .blog h3,.portfolio .heading{
+  text-align: center;
+  padding-top: 20px;
+  color: #000000;
+  text-shadow: 3px 2px 2px #FFFFFF;
+}
+.skills{
+  min-height: 450px;
+  background-color: #CCCCCC;
+  box-shadow: 1px 8px 25px #DDDDDD;
+}
+.skills ul{
+  margin: 0 auto;
+  width:81%;
+  padding: 50px 0;
+}
+.skills ul li{display: inline-block;}
+.skills li img{
+  width:225px;
+}
+.blog{
+  color:#000000;
+  padding-bottom: 20px;
+  /*box-shadow: 1px 8px 25px #888888;
+  position: relative;*/
+}
+.blog ul{width: 90%;margin: 0 auto;}
+.blog img{display: none;}
+.blog p{padding-bottom: 20px;}
+.blog .read a{
+  font-size: 28px;
+  color:#000000;
+  text-shadow: 1px 1px 2px #666666;
+}
+.blog .read a:hover{color:#FFFFFF;}
+.blog .post{
+  width: 30%;
+  display: inline-block;
+  line-height: 22px;
+  margin: 15px;
+  text-align: justify !important;
+}
+.blog .post .title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.portfolio{
+  min-height: 450px;
+  background-color: #CCCCCC;
+}
+.footer{
+  border-top: 1px dashed rgba(0,0,0,0.2);
+
+}
+.footer p{
+  text-align: center;
+   padding: 20px 0;
+  color: #000000;
+}
