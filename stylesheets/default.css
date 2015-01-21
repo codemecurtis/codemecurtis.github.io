@@ -21,7 +21,7 @@ blockquote p {
 }
 code{font-family: monospace;}
 .about{
-  background-image: url('../imgs/large-bg.jpg');
+  background-image: url('imgs/large-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
