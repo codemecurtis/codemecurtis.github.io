@@ -35,8 +35,8 @@ blockquote p {
   width: 65%;
   background-color: #F5F5F5;
 }
-.heading, .title{
-  font-size:40px;
+.heading{
+  font-size:60px;
   font-weight: 600;
   margin-top: 10px;
   font-family: 'Dancing Script'
@@ -66,12 +66,15 @@ blockquote p {
   margin-top: 15px;
   font-family: 'Dancing Script'
 }
+.home{padding: 20px;}
 .home a{
   font-size: 50px;
+  color:#FFFFFF;
+  text-shadow:1px 1px 1px rgba(225,225,255,1);
   text-decoration: none;
 }
 .home a:hover{
-  color: #AAAAAA;
+  color: #000000;
 }
 .recent{
   position: relative;
@@ -105,6 +108,10 @@ blockquote p {
 }
 
 /* Featured Posts */
+.title{
+  font-size: 40px;
+  font-family: 'Dancing Script';
+}
 .featured-posts .date{
   float: right;
   margin-top: 15px;
@@ -129,8 +136,11 @@ blockquote p {
 }
 .featured-posts .summary p{margin-bottom: 15px;}
 .featured-posts .read-more{
-  color: #1D433B;
+  color: #E70707;
   text-decoration: none;
 }
+.featured-posts .read-more:hover{
+  color: #801515;
+  }
 .footer p{text-align: center;margin-bottom: 20px;}
 code{font-family: monospace;}
