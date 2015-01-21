@@ -1,6 +1,9 @@
 body{color: #FFFFFF;font-family: 'Raleway'; font-weight: 300;}
+
 a{color:#68979B;text-decoration: none;}
+
 h1, h2{text-align: center;}
+
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
@@ -8,6 +11,7 @@ blockquote {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
+
 blockquote:before {
   color: #ccc;
   content: open-quote;
@@ -16,10 +20,13 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.4em;
 }
+
 blockquote p {
   display: inline;
 }
+
 code{font-family: monospace;}
+
 .about{
   background-image: url('../imgs/large-bg.jpg');
   background-position: center;
@@ -32,33 +39,54 @@ code{font-family: monospace;}
   width:100%;
   box-shadow: 0 1px 30px #000000;
 }
+
 .nav{
   float: right;
   margin-top:20px;
   font-size: 25px;
 }
+
 .nav li{
   display: inline-block;
   text-align: left;
   margin-right: 30px;
 }
+
 .nav li a{
   color: #FFFFFF;
   text-decoration: none;
 }
+
 .nav li a:hover{color: #68979B;}
+
 .logo{
   text-align: center;
   width: 385px;
   margin-left:20px;
 }
+
+.logo h1{
+  color: #FFFFFF;
+  text-shadow: 3px 2px 2px #000000;
+  padding-top: 0;
+}
+
+.heading, .blog h3{
+  text-align: center;
+  padding-top: 20px;
+  color: #000000;
+  text-shadow: 3px 2px 2px #FFFFFF;
+}
+
 .heading{
   font-size: 70px;
   font-family: "Dancing Script";
 }
+
 .sub-heading{
   font-size: 24px;
 }
+
 .about-me p{background-color: rgba(0,0,0,0.3);border-radius: 10px;}
 
 .main-image{
@@ -66,6 +94,7 @@ code{font-family: monospace;}
   position: relative;
   margin: 0 auto;
 }
+
 .main-image img{
   margin-top: 25px;
   width:160px;
@@ -73,6 +102,7 @@ code{font-family: monospace;}
   border-radius: 160px;
   border: 1px solid #FFFFFF;
 }
+
 .about-me{
   width:50%;
   margin: 0 auto;
@@ -81,25 +111,30 @@ code{font-family: monospace;}
   padding: 10px;
   border-radius: 20px
 }
+
 .recent-title{
   font-size: 38px;
   text-align: center;
   margin-top: 15px;
   font-family: 'Dancing Script'
 }
+
 .recent{
   position: relative;
   width: 240px;
   margin:0 auto;
 }
+
 .recent li{
   margin-top: 10px;
   list-style-type:circle;
 }
+
 .recent li a{
   color: #FFFFFF;
   text-decoration: none;
 }
+
 .recent li a:hover{
   color:#888888;
   text-decoration: underline;
@@ -110,48 +145,54 @@ code{font-family: monospace;}
   width:255px;
   margin: 0 auto;
 }
+
 .social-icons .fa{
   margin:10px;
 }
+
 .social-icons a{color: #FFFFFF;}
+
 .social-icons a:hover{
   color:#888888;
 }
-.skills .heading, .blog .heading, .blog h3,.portfolio .heading{
-  text-align: center;
-  padding-top: 20px;
-  color: #000000;
-  text-shadow: 3px 2px 2px #FFFFFF;
-}
+
 .skills{
   min-height: 450px;
   background-color: #CCCCCC;
-  box-shadow: 1px 8px 25px #DDDDDD;
+  box-shadow: 1px 8px 25px #999999;
 }
+
 .skills ul{
   margin: 0 auto;
   width:81%;
   padding: 50px 0;
 }
+
 .skills ul li{display: inline-block;}
+
 .skills li img{
   width:225px;
 }
+
 .blog{
   color:#000000;
   padding-bottom: 20px;
-  /*box-shadow: 1px 8px 25px #888888;
-  position: relative;*/
 }
+
 .blog ul{width: 90%;margin: 0 auto;}
+
 .blog img{display: none;}
+
 .blog p{padding-bottom: 20px;}
+
 .blog .read a{
   font-size: 28px;
   color:#000000;
   text-shadow: 1px 1px 2px #666666;
 }
+
 .blog .read a:hover{color:#FFFFFF;}
+
 .blog .post{
   width: 30%;
   display: inline-block;
@@ -159,18 +200,95 @@ code{font-family: monospace;}
   margin: 15px;
   text-align: justify !important;
 }
+
 .blog .post .title{
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+/* Work */
+.shadow{
+  box-shadow: 0px 12px 22px #999999;
+  height: 18px;
+  margin-top:-18px;
+  z-index: 1
+}
+
 .portfolio{
   min-height: 450px;
   background-color: #CCCCCC;
+  box-shadow: -1px -8px 25px #999999;
+  z-index: 200;
 }
-.footer{
-  border-top: 1px dashed rgba(0,0,0,0.2);
 
+.work > ul{
+  max-width:91%;
+  margin: 0 auto;
+  padding: 50px 0;
+  overflow:hidden;
+}
+
+.work ul li{
+  display: inline-block;
+  margin-right: 20px;
+  width: 300px;
+}
+
+.work ul li img{
+  width: 300px;
+  opacity: 0.3;
+}
+
+.work .title{
+  font-size: 26px;
+  padding: 10px 0;
+}
+
+.skills-used li{
+  margin-top: 3px;
+  color: #000000;
+  display: inline !important;
+}
+
+.work p{
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/*Contact*/
+form{
+  padding:30px 0;
+  width:430px;
+  margin: 0 auto;
+}
+
+label{color: #000000;}
+.comments{
+  position: relative;
+  top: 25px;
+}
+
+#comments{
+  margin-top: 30px;
+}
+
+.emailButton{
+  width:320px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: #333333;
+  margin: 0 auto 35px;
+}
+
+.emailButton:hover{
+  background-color: #555555;
+}
+
+/*Footer*/
+.footer{
+  border-top: 1px dashed rgba(0,0,0,0.3);
+  box-shadow: 2px -8px 25px #999999;
 }
 .footer p{
   text-align: center;
