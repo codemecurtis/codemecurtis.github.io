@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Blog for Curtis Seaton</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+</head>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="DBC Logo" />
+      </div>
+      <div class="content">
+        <h4 class="date">1/21/15</h4>
+        <h1 class="title">Ruby Classes</h1>
+        <h2 class="subtitle">No not the boring one with a teacher and a desk.</h2>
+
+          <section>
+            <p>
+              It seems to be the obvious for me now a days but almost everything in Ruby is an object or <code class="text">Object</code>. All Object-Oriented languages use them so if you have prior experience with Java you may understand easier than others. Add ruby classes is not different than an object. I am sure in the enumerable methods post last week you work paying close attention to the <code class="text">.group_by</code> well have you ever wondered how in the heck you can call this on an object. If you answered yes then great we will move forward with the learning (Those who said no can hit the “I hate this” button below to exit). A Ruby class is a collection of variables, methods and their specific behaviors. In the next couple of paragraphs I will “Lay down the law” for classes.
+            </p>
+
+            <h3>Instance variables</h3>
+
+            <p>
+              Instance variables are created at any point in your class but they are accessible by any method that you create inside of a class. And these are created by using the @ or “at sign” some people may refer to it as an ampersand but rest assured an Ampersand is this &amp;, back to the important stuff. I will now show you an example of instance variables in action.
+            </p>
+
+            <pre>
+              <code>
+  class TvShows
+
+     def initialize(show, channel, time)
+        @show = show
+        @channel = channel
+        @time = time
+     end
+
+     def favorite
+        puts "My favorite show is #{@show} and it comes on #{@channel} at #{@time}"
+     end
+
+  end
+              </code>
+            </pre>
+
+            <p>
+              Not the most interesting but I love the show Vikings and the premiere is right around the corner. :) Now I will explain.
+            </p>
+
+            <p>
+              We started out by naming our class <code class="text">TvShows</code> and asked for 3 initial arguments. That would be the T.V. Show name, the channel it is on and the time it comes on. After that we created a new instance method by the name of <code class="text">favorite</code> and passed a simple string.
+            </p>
+
+            <p>
+              We also used a nice feature of ruby called string interpolation that is the <code class="text">#{@show}</code> in the method <code class="text">favorite</code>. I am not going to go into full detail about this but I am sure I will have another post about this in the future.
+              <p class="hint">Hint make sure initialize is spelled correctly, Ruby does not take lightly to misspelling.</p>
+            </p>
+
+            <h3>
+              The Output and Description
+            </h3>
+
+            <p>
+              The above code is probably the most simple example that anyone could think of but it works for us beginners. So you are probably wondering well now how the heck do I use this, that is my job to show you. When I was first starting out with classes I had a huge issue with forgetting to start with the <code class="text">.new</code> before anything so I will make it my focus.
+            </p>
+
+            <p>
+              In order to get the process started you need to set a variable to the new object like so. <br>
+              You may remember the <code class="text">Array.new</code>, yeah well it is a lot like that. Form there we will use this to initialize the values of <code class="text">show</code>, <code class="text">channel</code>, <code>time</code>. Now what it the method inside of our class do? good question.
+            </p>
+
+            <pre>
+              <code>
+   favorite_show = TvShows.new("Vikings", "History", "10:00 P.M")
+              </code>
+            </pre>
+
+            <p>
+              we can now say <code>favorite_show.favorite</code> and the output should go as follows
+            </p>
+
+            <pre>
+              <code>
+   Output => My favorite TV Show is Vikings. It comes on at 10:00 P.M on History channel.
+              </code>
+            </pre>
+
+            <p>
+              Again note this as the most simple example that classes are used for, As my experience grows yours will grow with it. I see a post in the near future displaying how we can make a game for instance like Bingo or a guessing game or why not even “peek a boo”. Classes can grow pretty long in size just like the original <code>Array</code> class but it is always to keep in mind to break methods up into small pieces of code for other to understand. You will probably spend a lot of time with refactoring classes just because there are so many methods and uses for classes. With that being said what are you still doing here!!! Go out there and practice cause as they say it will make you perfect.
+            </p>
+
+          </section>
+          <footer>
+            &nbsp;
+          </footer>
+        </div>
+    </div>
+  </body>
+</html>
