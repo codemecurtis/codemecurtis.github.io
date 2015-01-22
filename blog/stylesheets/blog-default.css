@@ -88,6 +88,7 @@ blockquote p {
 .recent li a{
   color: #FFFFFF;
   text-decoration: none;
+  text-transform: capitalize;
 }
 .recent li a:hover{
   color:#888888;
