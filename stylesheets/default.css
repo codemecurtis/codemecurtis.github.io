@@ -164,7 +164,7 @@ code{font-family: monospace;}
 
 .skills ul{
   margin: 0 auto;
-  width:81%;
+  width:1145px;
   padding: 50px 0;
 }
 
@@ -205,6 +205,10 @@ code{font-family: monospace;}
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.blog .summary p{
+  height:180px;
 }
 
 /* Work */
