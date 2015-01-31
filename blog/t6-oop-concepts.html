@@ -19,7 +19,6 @@
 
           <section>
 
-
                 <h3>Local Variables</h3>
 
                   <p>
@@ -56,13 +55,13 @@
 </code></pre>
 
                 <p>
-                  when working with local variables there are 2 things to remember, they always start with a lowercase letter and they cannot be used out side the <code>def</code> and <code>end</code> tags.
+                  when working with local variables there are 2 things to remember, they always start with a lowercase letter and they cannot be used out side the <code class="text">def</code> and <code class="text">end</code> tags.
                 </p>
 
                 <h3>Global Variables</h3>
 
                   <p>
-                    Global variables are just that, Variables which can be accessed globally within any part of the program. The can be defined in side a method, outside a method and in a class or even top-level which is outside of the class. In order to write a local va=riable it is just as easy as others just use the <code>$</code>:
+                    Global variables are just that, Variables which can be accessed globally within any part of the program. The can be defined in side a method, outside a method and in a class or even top-level which is outside of the class. In order to write a local va=riable it is just as easy as others just use the <code class="text">$</code>:
                   </p>
 <pre><code>
   def global_method
@@ -75,11 +74,11 @@
                 </p>
 
                 <p>
-                  If you do not initialize a global variable and try to call it then the value is uniquely set to <code><i>nil</i></code>.
+                  If you do not initialize a global variable and try to call it then the value is uniquely set to <code class="text"><i>nil</i></code>.
                 </p>
 
                 <p>
-                  Global varaibles can also be traced by a ruby program so their is something called variable value(s) and these are special suffix to the <code>$</code>. Here is a list for you to review.
+                  Global varaibles can also be traced by a ruby program so their is something called variable value(s) and these are special suffix to the <code class="text">$</code>. Here is a list for you to review.
                 </p>
 
 
@@ -121,7 +120,7 @@
                 <h3>Instance Variable</h3>
 
                   <p>
-                    Instance variables seem to look cooler and their function is pretty cool as well, they all start with the <code>@</code> symbol. Instance variables can be declared in many different ways so let me go ahead show you and I will explain each one.
+                    Instance variables seem to look cooler and their function is pretty cool as well, they all start with the <code class="text">@</code> symbol. Instance variables can be declared in many different ways so let me go ahead show you and I will explain each one.
                   </p>
 
 
@@ -157,7 +156,7 @@
 
 
                 <p>
-                  The first example is one of the most common use cases. This class when called will need and argument or parameter some kind of name. It will then set <code>@name</code> equal to whatever argument you pass when you call the class.
+                  The first example is one of the most common use cases. This class when called will need and argument or parameter some kind of name. It will then set <code class="text">@name</code> equal to whatever argument you pass when you call the class.
                 </p>
 
                 <p>
@@ -165,13 +164,13 @@
                 </p>
 
                 <p>
-                  The third example is a little more confusing but it isn’t as confusing or odd as it seems. This is the <code>attr_accessor</code> there is also <code>attr_reader</code> and <code>attr_writer</code> they are all similar but have slight differences. <code>attr_accessor</code> is accessible anywhere in the module or class and can be manipulated however you’d like. <code>attr_reader</code> is accessible in the entire module as well except that it will only allow you to read what the <code>Instance Variable</code> is set to. Last but not least the <code>attr_writer</code> is accessible by the entire module once again but is only writeable meaning it cannot be read and should only be used to write information in between methods, that is not our focus though.
+                  The third example is a little more confusing but it isn’t as confusing or odd as it seems. This is the <code class="text">attr_accessor</code> there is also <code class="text">attr_reader</code> and <code class="text">attr_writer</code> they are all similar but have slight differences. <code class="text">attr_accessor</code> is accessible anywhere in the module or class and can be manipulated however you’d like. <code class="text">attr_reader</code> is accessible in the entire module as well except that it will only allow you to read what the <code class="text">Instance Variable</code> is set to. Last but not least the <code class="text">attr_writer</code> is accessible by the entire module once again but is only writeable meaning it cannot be read and should only be used to write information in between methods, that is not our focus though.
                 </p>
 
                 <h3>Class Variables</h3>
 
                 <p>
-                  Identical to <code>instance variables</code> <code>class variables</code> are declared using the <code>@@</code>. Here is an example for <code>class variables</code>
+                  Identical to <code class="text">instance variables</code> <code class="text">class variables</code> are declared using the <code class="text">@@</code>. Here is an example for <code class="text">class variables</code>
                 </p>
 
 <pre>
@@ -223,7 +222,7 @@
                 </code>
 
                 <p>
-                  I am sure you could imagine what this will output but I am sure wondering why and when you would use these. Well just a fair warning <code>Constants</code> are variable in which ruby recommends not to change the value. Like all things in ruby it is abut readability right? So when using a <code>Constant</code> someone new to your code base can easily understand the value of this will most likely stay the same the entire time of the program.
+                  I am sure you could imagine what this will output but I am sure wondering why and when you would use these. Well just a fair warning <code class="text">Constants</code> are variable in which ruby recommends not to change the value. Like all things in ruby it is abut readability right? So when using a <code class="text">Constant</code> someone new to your code base can easily understand the value of this will most likely stay the same the entire time of the program.
                 </p>
 
 
