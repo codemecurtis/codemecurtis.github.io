@@ -73,3 +73,8 @@ pre{
   font-family: monospace;
   padding:15px 0 0 0;
 }
+img{
+  width:100%;
+  float: left;
+  margin: 25px 0;
+}
