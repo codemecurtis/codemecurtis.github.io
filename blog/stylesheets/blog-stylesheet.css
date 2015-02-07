@@ -36,11 +36,6 @@ main{
   margin:0 auto;
   min-height: 100%;
 }
-.logo{
-  background-color: orange;
-  position: absolute;
-  right: 0; top: 0; left: 0;
-}
 .logo img{width:200px;
   height:100px;
   position: relative;
