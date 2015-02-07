@@ -36,10 +36,11 @@ main{
   margin:0 auto;
   min-height: 100%;
 }
-.logo img{width:200px;
+.logo img{
+  width:200px;
   height:100px;
   position: relative;
-  left:400px;
+  margin: 0 auto;
 }
 .gregorc{
   float: right;
