@@ -20,6 +20,11 @@ h4{
 }
 p{margin:20px 0;}
 
+section{
+  line-height: 24px;
+  text-align: justify;
+}
+
 .container{
   width:960px;
   margin:0 auto;
@@ -73,4 +78,19 @@ img{
   width:100%;
   float: left;
   margin: 25px 0;
+}
+.value{
+  width: 500px;
+  float: right;
+  margin:0 25px 0;
+}
+.values{
+  text-align: center;
+  margin-bottom: 20px;
+  color: orange;
+}
+.values li{
+  display: inline-block;
+  font-size: 20px;
+  margin: 0 10px;
 }
