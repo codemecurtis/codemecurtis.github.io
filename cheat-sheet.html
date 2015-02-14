@@ -1,0 +1,145 @@
+<!Doctype>
+<html>
+	<head>
+		<title>Ruby and JavaScript Looping Cheat Sheet</title>
+		<link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet.css">
+	</head>
+	<body>
+		<header>Ruby and JavaScript Looping Cheat Sheet</header>
+		<div class="container">
+			<div class="left">
+				<h2>Ruby</h2>
+					<p>
+						Loops in Ruby are used to execute the same block of code a specified number of times. This chapter details all the loop statements supported by Ruby.
+					</p>
+
+				<h3>For Loops</h3>
+					<p>Executes code once for each element in expression.</p>
+<pre>
+<code>
+for variable [, variable ...] in expression [do]
+   code
+end
+</code>
+</pre>
+				<h3>While</h3>
+					<p>
+						Executes code while conditional is true. A while loop's conditional is separated from code by the reserved word do, a newline, backslash \, or a semicolon ;.
+					</p>
+<pre>
+<code>
+while conditional [do]
+		code
+end
+</code>
+</pre>
+				<h3>Each <span>(Enumerables)</span></h3>
+					<p>
+						each { |item| block } &rarr; ary click to toggle source
+						each &rarr; Enumerator
+						Calls the given block once for each element in self, passing that element as a parameter.
+
+						An Enumerator is returned if no block is given.
+					</p>
+<pre>
+<code>
+a = [ "a", "b", "c" ]
+a.each {|x| print x, " -- " }
+</code>
+</pre>
+					<p>
+						.each is a built in iterator function in Ruby. It loops through each item in a list, hash, or other iterable object allowing you to perform operations on that value. The block of an .each statement creates a new scope for your variable so you don't accidentally modify the original value.
+					</p>
+
+				<h3>Times</h3>
+					<p>
+						.times is a built in iterator function in Ruby. It performs an action a given number of times.
+					</p>
+<pre>
+<code>
+num_of_times.times do
+# do something
+end
+</code>
+</pre>
+
+			</div>
+			<div class="right">
+				<h2>JavaScript</h2>
+					<p>
+						JavaScript supports two loop statements: for and while. The For statements are best used when you want to perform a loop a specific number of times. The While statements are best used to perform a loop an undetermined number of times. In addition, you can use the break and continue statements within loop statements.
+					</p>
+
+				<h3>For Loops</h3>
+					<p>
+						<p class="def-title">initialization</p>
+							<p>An expression (including assignment expressions) or variable declaration. Typically used to initialize a counter variable. This expression may optionally declare new variables with the var keyword. These variables are not local to the loop, i.e. they are in the same scope the for loop is in. The result of this expression is discarded.</p>
+						<p class="def-title">condition</p>
+							<p>An expression to be evaluated before each loop iteration. If this expression evaluates to true, statement is executed. This conditional test is optional. If omitted, the condition always evaluates to true. If the expression evaluates to false, execution skips to the first expression following the for construct.</p>
+						<p class="def-title">final-expression</p>
+							<p>An expression to be evaluated at the end of each loop iteration. This occurs before the next evaluation of condition. Generally used to update or increment the counter variable.</p>
+						<p class="def-title">statement</p>
+							<p>A statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a block statement ({ ... }) to group those statements. To execute no statement within the loop, use an empty statement (;).</p>
+						</p>
+<pre>
+<code>
+for ([initialization]; [condition]; [final-expression])
+   statement
+</code>
+</pre>
+
+				<h3>While</h3>
+					<p>
+						The while statement creates a loop that executes a specified statement as long as the test condition evaluates to true. The condition is evaluated before executing the statement.
+					</p>
+<pre>
+<code>
+while (condition) {
+  statement
+}
+</code>
+</pre>
+				<p>
+					<p class="def-title">condition</p>
+						<p>An expression evaluated before each pass through the loop. If this condition evaluates to true, statement is executed. When condition evaluates to false, execution continues with the statement after the while loop.</p>
+					<p class="def-title">statement</p>
+						<p>A statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a block statement ({ ... }) to group those statements.</p>
+				</p>
+
+				<h3>For...in</h3>
+					<p>
+						<p class="def-title">variable</p>
+							<p>A different property name is assigned to variable on each iteration.</p>
+						<p class="def-title">object</p>
+							<p>Object whose enumerable properties are iterated.</p>
+					</p>
+
+					<p>
+						A for...in loop only iterates over enumerable properties. Objects created from built&#45;in constructors like Array and Object have inherited non&#45;enumerable properties from Object.prototype and String.prototype, such as String's indexOf() method or Object's toString() method. The loop will iterate over all enumerable properties of the object itself and those the object inherits from its constructor's prototype (properties closer to the object in the prototype chain override prototypes' properties).
+					</p>
+<pre>
+	<code>
+for (variable in object) {...}
+</code>
+</pre>
+				<h3>Do..while</h3>
+					<p>
+							The do...while statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once.
+					</p>
+<pre>
+<code>
+do
+   statement
+while (condition);
+</code>
+</pre>
+					<p>
+						<p class="def-title">statement</p>
+							<p>A statement that is executed at least once and is re-executed each time the condition evaluates to true. To execute multiple statements within the loop, use a block statement ({ ... }) to group those statements.</p>
+						<p class="def-title">condition</p>
+							<p>An expression evaluated after each pass through the loop. If condition evaluates to true, the statement is re-executed. When condition evaluates to false, control passes to the statement following the do...while.</p>
+					</p>
+			</div>
+		</div>
+	</body>
+</html>
