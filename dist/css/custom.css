@@ -219,3 +219,7 @@ footer{
   top: 20px;
   margin: 0 10px;
 }
+.marketing h2{
+  color: #000000;
+  text-shadow: 1px 1px 1px #CCCCCC;
+}
