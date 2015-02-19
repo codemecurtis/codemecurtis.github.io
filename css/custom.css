@@ -59,15 +59,7 @@ pre{
   float: none;
   text-align: center;
 }
-.page-link{
-  color: #FFFFFF !important;
-  position: relative;
-  text-align: center;
-  font-family: "Quicksand";
-  margin-top: 20px;
-  font-weight: 500;
-  font-size: 2.2em;
-}
+
 
 /*====================
   Right Side
@@ -142,7 +134,17 @@ footer{
 /*====================
   Responsive
 =====================*/
-
+@media screen and (min-width: 1024px) and (max-width: 1240px){
+  .page-link{
+    color: #FFFFFF !important;
+    position: relative;
+    text-align: center;
+    font-family: "Quicksand";
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 2.2em;
+  }
+}
 @media screen and (max-width: 768px){
   .site-header{
     position: relative !important;
