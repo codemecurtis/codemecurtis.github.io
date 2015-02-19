@@ -8,7 +8,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://infin80design.github.io" # the base hostname & protocol for your site
 twitter_username: codemecurtis
 github_username:  infin80design
-source: 'http://infin80design.github.io/'
 
 paginate: 7
 paginate_path: "/page:num/"
