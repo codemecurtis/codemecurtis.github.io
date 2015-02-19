@@ -9,7 +9,9 @@ img.me{
   border-radius: 175px;
   border: 2px solid #FFF;
 }
-/*Image Flip*/
+/*=====================
+  Image Flip
+=====================*/
 .flip-container:hover .flipper, .flip-container.hover .flipper {
     transform: rotateY(180deg);
   }
@@ -46,6 +48,9 @@ img.me{
   top:50px;
   left:2px;
 }
+/*=====================
+  Navigation
+=====================*/
 
 .navbar-nav{
   float: right;
@@ -61,25 +66,8 @@ img.me{
   border: none;
 }
 
-.navbar-inverse .navbar-brand{
-  font-size: 60px;
-  font-family: "Dancing Script";
+.navbar-inverse .navbar-nav>li>a{
   color: #FFFFFF;
-}
-
-.navbar-sub-brand{
-  font-size: 20px;
-  color:#FFFFFF;
-  text-align: center;
-  line-height: 30px;
-  font-family: "Raleway";
-  opacity: 0.3;
-  text-shadow: 2px 2px 2px #FFFFFF;
-  width: 80%;
-}
-
-.navbar-inverse .navbar-brand:hover{
-  color: #E6E6E6;
 }
 
 .navbar-inverse .navbar-toggle{
@@ -94,10 +82,29 @@ img.me{
   background-color: #FFFFFF;
 }
 
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse .navbar-brand{
+  font-size: 60px;
+  font-family: "Dancing Script";
   color: #FFFFFF;
 }
 
+.navbar-inverse .navbar-brand:hover{
+  color: #E6E6E6;
+}
+
+.navbar-sub-brand{
+  font-size: 20px;
+  color:#FFFFFF;
+  text-align: center;
+  line-height: 30px;
+  font-family: "Raleway";
+  opacity: 0.3;
+  text-shadow: 2px 2px 2px #FFFFFF;
+  width: 80%;
+}
+/*=====================
+  Main Content
+=====================*/
 .main{
   background-image: url(../../imgs/large-bg-4.jpg);
   background-size: 100%;
@@ -110,19 +117,19 @@ img.me{
   width: 190px;
   margin: 120px auto 0 auto;
 }
-
 .social-icons a{
   color: #FFFFFF;
   margin: 0 5px;
 }
-
 .social-icons a:hover{
   color: #E6E6E6;
 }
+
 .about-me{
   color: #FFFFFF;
 }
-.recent-title{
+
+.tagline{
   text-align: center;
   margin-top: 60px;
   font-size: 4.5em;
@@ -131,13 +138,13 @@ img.me{
   text-shadow: 2px 2px 3px #000000;
   text-transform: capitalize;
 }
-.recent-title span, .big-text{
+.tagline span, .big-text{
   font-weight: 700;
   color: #41b7d8;
   text-shadow: 2px 2px 3px #000000;
 }
 
-.recent-title i{
+.tagline i{
   color: #cedce7; /* Old browsers */
   color: -moz-linear-gradient(top,  #cedce7 0%, #596a72 100%); /* FF3.6+ */
   color: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72)); /* Chrome,Safari4+ */
@@ -148,34 +155,15 @@ img.me{
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 ); /* IE6-9 */
   font-weight: 900;
 }
-.big-text{
-  color: #FFFFFF !important;
+/*=====================
+  Sub Content Base
+=====================*/
+.marketing h2, .lead .read-more, .heading a{
+  color: #000000 !important;
+  text-shadow: 1px 1px 1px #CCCCCC;
 }
-
-.heading{
-  text-align: center;
-  font-family: "Dancing Script";
-  font-weight: 700;
-  font-size: 15em;
-  color: #000000;
-}
-
-.skills{
-  margin-bottom: 80px;
-}
-
-.skills img{
-  width: 100%;
-}
-
-.carousel-inner img{
-  width:200px;
-  margin: 20px auto;
-}
-
-.portfolio-1{
-  background-image: url(../../imgs/large-bg.jpg);
-  background-size: 100%;
+.heading a span:hover{
+  color:#F6F6F6;
 }
 
 .featurette{
@@ -191,8 +179,13 @@ img.me{
   color: #FFFFFF;
 }
 
-.featurette .heading{
-  text-shadow: 1px 1px 1px #EEEEEE;
+.heading{
+  text-align: center;
+  font-family: "Dancing Script";
+  font-weight: 700;
+  font-size: 15em;
+  color: #000000;
+  text-shadow: 1px 1px 1px #E6E6E6;
 }
 
 .heading span{
@@ -214,12 +207,26 @@ img.me{
   margin: 0;
 }
 
+/*=====================
+  Skills
+=====================*/
+
+.skills{
+  margin-bottom: 80px;
+}
+
+.skills img{
+  width: 100%;
+}
+
+
+
+/*=====================
+  Footer
+=====================*/
+
 footer{
   position: relative;
   top: 20px;
   margin: 0 10px;
-}
-.marketing h2, .lead .read-more{
-  color: #000000;
-  text-shadow: 1px 1px 1px #CCCCCC;
 }
