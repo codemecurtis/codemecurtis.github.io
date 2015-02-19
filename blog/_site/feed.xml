@@ -4,10 +4,10 @@
     <title>Code Me Curtis</title>
     <description>This site is for future employers to see my growth throughout Dev Bootcamp and beyond.
 </description>
-    <link>http://infin80design.github.io/</link>
-    <atom:link href="http://infin80design.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Feb 2015 10:49:55 -0800</pubDate>
-    <lastBuildDate>Thu, 19 Feb 2015 10:49:55 -0800</lastBuildDate>
+    <link>/blog/</link>
+    <atom:link href="/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 19 Feb 2015 11:14:23 -0800</pubDate>
+    <lastBuildDate>Thu, 19 Feb 2015 11:14:23 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Sun, 15 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/cultural/2015/02/15/conflict.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/02/15/conflict.html</guid>
+        <link>/blog/cultural/2015/02/15/conflict.html</link>
+        <guid isPermaLink="true">/blog/cultural/2015/02/15/conflict.html</guid>
         
         
         <category>cultural</category>
@@ -142,8 +142,8 @@ Next is a product i use for work called hip chat is has a lot of nice features a
 
 </description>
         <pubDate>Wed, 11 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/technical,/featured/2015/02/11/my-reaction-to-reactjs.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/02/11/my-reaction-to-reactjs.html</guid>
+        <link>/blog/technical,/featured/2015/02/11/my-reaction-to-reactjs.html</link>
+        <guid isPermaLink="true">/blog/technical,/featured/2015/02/11/my-reaction-to-reactjs.html</guid>
         
         
         <category>technical,</category>
@@ -173,8 +173,8 @@ Next is a product i use for work called hip chat is has a lot of nice features a
 &lt;p&gt;When over coming these obstacles you may or may not realize that you are growing. To overcome any step of stereotype threat causes you to grow in some shape, way or form. Growing in life is something that you do on a daily basis and have done since your birth. People can grow in height, weight, heart etc. If you have a fixed mindset it will make it very tough to overcome stereotype threat. Just remember if you are having a hard time with it you have to take a step back and try to implement confidence, will-power and growth.&lt;/p&gt;
 </description>
         <pubDate>Sun, 08 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/cultural/2015/02/08/core-value.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/02/08/core-value.html</guid>
+        <link>/blog/cultural/2015/02/08/core-value.html</link>
+        <guid isPermaLink="true">/blog/cultural/2015/02/08/core-value.html</guid>
         
         
         <category>cultural</category>
@@ -251,8 +251,8 @@ Next is a product i use for work called hip chat is has a lot of nice features a
 
 </description>
         <pubDate>Sat, 07 Feb 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html</guid>
+        <link>/blog/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html</link>
+        <guid isPermaLink="true">/blog/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html</guid>
         
         
         <category>technical,</category>
@@ -416,8 +416,8 @@ Constant = “I am a constant”
 
 </description>
         <pubDate>Fri, 30 Jan 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/technical/2015/01/30/the-scope-of-variables.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/technical/2015/01/30/the-scope-of-variables.html</guid>
+        <link>/blog/technical/2015/01/30/the-scope-of-variables.html</link>
+        <guid isPermaLink="true">/blog/technical/2015/01/30/the-scope-of-variables.html</guid>
         
         
         <category>technical</category>
@@ -462,8 +462,8 @@ You can see here that the person who was nice never really gave anything constru
 &lt;p&gt;Needless to say this was not the only conversation I had with my father but because I made a wrong decision it was little easier for me to overcome this derogatory thought. I quickly continued my path of building computers and learned that I did not want to do this my entire life and look at me now! Succeeding at Dev Bootcamp and on a great path to make a huge impact in the industry.&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 Jan 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/cultural/2015/01/29/the-streotype-threat.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/01/29/the-streotype-threat.html</guid>
+        <link>/blog/cultural/2015/01/29/the-streotype-threat.html</link>
+        <guid isPermaLink="true">/blog/cultural/2015/01/29/the-streotype-threat.html</guid>
         
         
         <category>cultural</category>
@@ -515,8 +515,8 @@ You can see here that the person who was nice never really gave anything constru
 &lt;p&gt;I prefer myself to take notes during my session so it is a little easier to remember what you did and did not like. Often times I don’t get to leaving my pair feedback till the next day because my brain is just fried from such a hard challenge or maybe even 2 days later cause it slipped my mind. This is where having notes really comes handy especially when you are retaining as much information as a Phase 0 DBC student. Pairing and feedback are no easy task but it is a task that I can seem to appreciate more and more as time goes on.&lt;/p&gt;
 </description>
         <pubDate>Thu, 22 Jan 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/cultural/2015/01/22/the-values-of-pair-programming.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/01/22/the-values-of-pair-programming.html</guid>
+        <link>/blog/cultural/2015/01/22/the-values-of-pair-programming.html</link>
+        <guid isPermaLink="true">/blog/cultural/2015/01/22/the-values-of-pair-programming.html</guid>
         
         
         <category>cultural</category>
@@ -569,8 +569,8 @@ You may remember the &lt;code&gt;Array.new&lt;/code&gt;, yeah well it is a lot l
 
 </description>
         <pubDate>Thu, 22 Jan 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/cultural/2015/01/22/ruby-classes.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/01/22/ruby-classes.html</guid>
+        <link>/blog/cultural/2015/01/22/ruby-classes.html</link>
+        <guid isPermaLink="true">/blog/cultural/2015/01/22/ruby-classes.html</guid>
         
         
         <category>cultural</category>
@@ -651,8 +651,8 @@ hash.group_by { |key, value|  value }
 &lt;p&gt;I hope you have some time to play around with some enumerables and find great uses for &lt;code&gt;group_by&lt;/code&gt; and &lt;code&gt;each&lt;/code&gt;. Just remember if you are trying to write easy to read code always try to remove the &lt;code&gt;do&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt; when there is a enumerable method available.&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jan 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/technical/2015/01/18/enumerable-methods.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/technical/2015/01/18/enumerable-methods.html</guid>
+        <link>/blog/technical/2015/01/18/enumerable-methods.html</link>
+        <guid isPermaLink="true">/blog/technical/2015/01/18/enumerable-methods.html</guid>
         
         
         <category>technical</category>
@@ -675,8 +675,8 @@ hash.group_by { |key, value|  value }
 
 </description>
         <pubDate>Mon, 12 Jan 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html</guid>
+        <link>/blog/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html</link>
+        <guid isPermaLink="true">/blog/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html</guid>
         
         
         <category>technical,</category>
