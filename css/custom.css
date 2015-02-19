@@ -159,11 +159,6 @@ footer{
     position: relative;
     top: 50px;
   }
-  .page-link{
-    color: #000000 !important;
-    font-family: "Quicksand";
-    font-size: 1em;
-  }
 }
 
 @media screen and (max-width: 320px) {
@@ -175,5 +170,12 @@ footer{
   }
   .me{
     display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+.page-link{
+    color: #000000 !important;
+    font-family: "Quicksand";
+    font-size: 1em;
   }
 }
