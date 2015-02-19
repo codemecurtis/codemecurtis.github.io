@@ -1,3 +1,9 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .recent-title{
+    font-size:2.5em;
+  }
+}
+
 @media screen and (max-width: 320px){
   .navbar-inverse .navbar-brand{
     font-size: 35px;
