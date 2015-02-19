@@ -6,8 +6,8 @@
 </description>
     <link>http://infin80design.github.io/</link>
     <atom:link href="http://infin80design.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 19 Feb 2015 10:16:19 -0800</pubDate>
-    <lastBuildDate>Thu, 19 Feb 2015 10:16:19 -0800</lastBuildDate>
+    <pubDate>Thu, 19 Feb 2015 10:49:55 -0800</pubDate>
+    <lastBuildDate>Thu, 19 Feb 2015 10:49:55 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -578,6 +578,88 @@ You may remember the &lt;code&gt;Array.new&lt;/code&gt;, yeah well it is a lot l
       </item>
     
       <item>
+        <title>What is an enumerable method?</title>
+        <description>&lt;p&gt;Enumerable is simply a collection of methods that iterate through a collection of objects and run the following block. I am sure that went over your head so let me break it down for you. Lets start with iterating this is the act of separating each element and providing it an action is what is called a block. I will give you an example.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+arr = [&quot;Hello&quot;, &quot;World&quot;, &quot;He is crazy&quot;, &quot;Wait&quot;, &quot;What&quot;] &lt;br /&gt;
+arr.each { |element| puts element }
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;Alternitevly we could say&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+arr = [&quot;Hello&quot;, &quot;World&quot;, &quot;He is crazy&quot;, &quot;Wait&quot;, &quot;What&quot;] &lt;br /&gt;
+arr.each do |element|
+puts element
+end
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;This is saying go through each element in arr which is an array and print each value on to the screen. Now back to the collection of objects which is in this scenario arr it can either be an array or hash. The curly braces after the each method is the block which is creating a temporary variable of &lt;i&gt;element&lt;/i&gt; and telling to print each element of the array. This is a great way to make 1 line solutions and have it very human readable.&lt;/p&gt;
+
+&lt;h3 id=&quot;groupby&quot;&gt;Group_by&lt;/h3&gt;
+&lt;p&gt;I will now go through one of my more favorite enumerable methos which is &lt;code&gt;group_by&lt;/code&gt;. Is simple &lt;code&gt;group_by&lt;/code&gt; does eaxtly that by the value that you ask for. As ruby explains it&lt;/p&gt;
+&lt;blockquote&gt;
+&quot;Groups the collection by result of the block. Returns a hash where the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key.&lt;br /&gt;
+&amp;nbsp;
+If no block is given an enumerator is returned.&quot;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As an example I will group an array and a hash so let’s start with an array.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+array = [10,45,18,33,59,78,43,100,8,12,83] &lt;br /&gt;
+array.group_by {|element| element % 2 == 0}
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;&lt;i class=&quot;output&quot;&gt;Output:&lt;/i&gt;&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+[10,18,78,100,8,12]
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;The syntax is almost identical to the each method we used earlier but we used &lt;code&gt;group_by&lt;/code&gt; instead. What I am asking here is for each element in the array that’s modulo (The remainder) is equal to 0. This is a complicated way of saying return each integer that is an even number. There is another method that we could add here to refactor our code. I will explain refactoring later.&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+array.group_by {|element| element.even?}
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;the &lt;code&gt;.even?&lt;/code&gt; method returns every number that is even in the given object. This is a great way to make your code easily readible for someone new to your project or new to coding in general. Now I will give you an idea for hashes. Knowing that hashes have accessible keys and values unlike arrays this will give us a little more creative example.&lt;/p&gt;
+
+&lt;pre&gt;
+&lt;code&gt;
+hash = {&quot;Strawbery&quot; =&amp;gt; &quot;fruit&quot;, &quot;Potato&quot; =&amp;gt; &quot;vegetable&quot;, &quot;Orange&quot; =&amp;gt; &quot;fruit&quot;, &quot;Grape&quot; =&amp;gt; &quot;fruit&quot;, &quot;Lettuce&quot; =&amp;gt; &quot;vegetable&quot;} &lt;br /&gt;
+hash.group_by { |key, value|  value }
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;&lt;i class=&quot;output&quot;&gt;Output:&lt;/i&gt;&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+{&quot;fruit&quot;=&amp;gt;[[&quot;Strawbery&quot;, &quot;fruit&quot;], [&quot;Orange&quot;, &quot;fruit&quot;], [&quot;Grape&quot;, &quot;fruit&quot;]], &quot;vegetable&quot;=&amp;gt;[[&quot;Potato&quot;, &quot;vegetable&quot;], [&quot;Lettuce&quot;, &quot;vegetable&quot;]]}
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Similarily to the array it grouped our hash by the object we ask. The biggest difference is in the temporary variables we set. In this example I used &lt;code&gt;key&lt;/code&gt; and &lt;code&gt;value&lt;/code&gt; for easy identification. After we say key and value we ask for it to group by similar values. In this example we would see &lt;code&gt;fruit=&amp;gt;&lt;/code&gt; and &lt;code&gt;vegetable=&amp;gt;&lt;/code&gt; these are the like values and we can see that Strawberry, Orange and Grape are all fruits.&lt;/p&gt;
+
+&lt;p&gt;I am sure you could imagine why this is a good method. It will take a lot of required code and logic and bundle it up into a nice short and readable method. To touch on refactoring real quick. In a simple format refactoring is looking at your initial solution and finding ways to make this easier to read, remove any un neccessary logic, variables or loops. In our industry it impartative for us to write readable code, 9 times out of 10 some one else will eventually take a look at your code and nobody wants to spend hours just trying to understand what you are doing.&lt;/p&gt;
+
+&lt;p&gt;I hope you have some time to play around with some enumerables and find great uses for &lt;code&gt;group_by&lt;/code&gt; and &lt;code&gt;each&lt;/code&gt;. Just remember if you are trying to write easy to read code always try to remove the &lt;code&gt;do&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt; when there is a enumerable method available.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Jan 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/technical/2015/01/18/enumerable-methods.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/technical/2015/01/18/enumerable-methods.html</guid>
+        
+        
+        <category>technical</category>
+        
+      </item>
+    
+      <item>
         <title>The Missing Minorites In Tech</title>
         <description>&lt;p&gt;I remember sometime about a year ago I was reading a story about how @Twiiter wasn’t meeting the global standards for minorites and it gave me that much more of a push to make a change for this. As of now there is only 6.1 percent of the industry which is a underrepresented women or minority says &lt;a href=&quot;http://www.insightintodiversity.com/&quot;&gt;Insight to Diversity&lt;/a&gt;. There are many ways to change this but the only way it is going to last is by teaching our youth how important the tech industry is not only now but in the future.&lt;/p&gt;
 
@@ -595,69 +677,6 @@ You may remember the &lt;code&gt;Array.new&lt;/code&gt;, yeah well it is a lot l
         <pubDate>Mon, 12 Jan 2015 00:00:00 -0800</pubDate>
         <link>http://infin80design.github.io/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html</link>
         <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html</guid>
-        
-        
-        <category>technical,</category>
-        
-        <category>featured</category>
-        
-      </item>
-    
-      <item>
-        <title>Hashes &amp; Arrays for Days</title>
-        <description>&lt;p&gt;Enumerable is simply a collection of methods that iterate through a collection of objects and run the following block. I am sure that went over your head so let me break it down for you. Lets start with iterating this is the act of separating each element and providing it an action is what is called a block. I will give you an example.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;World&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;He is crazy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Wait&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;What&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Alternitevly we could say&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;World&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;He is crazy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Wait&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;What&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;This is saying go through each element in arr which is an array and print each value on to the screen. Now back to the collection of objects which is in this scenario arr it can either be an array or hash. The curly braces after the each method is the block which is creating a temporary variable of &lt;i&gt;element&lt;/i&gt; and telling to print each element of the array. This is a great way to make 1 line solutions and have it very human readable.&lt;/p&gt;
-
-&lt;h3 id=&quot;groupby&quot;&gt;Group_by&lt;/h3&gt;
-&lt;p&gt;I will now go through one of my more favorite enumerable methos which is &lt;code&gt;group_by&lt;/code&gt;. Is simple &lt;code&gt;group_by&lt;/code&gt; does eaxtly that by the value that you ask for. As ruby explains it&lt;/p&gt;
-&lt;blockquote&gt;
-  &quot;Groups the collection by result of the block. Returns a hash where the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key.
-  &amp;nbsp;
-  If no block is given an enumerator is returned.&quot;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As an example I will group an array and a hash so let’s start with an array.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;59&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;78&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;83&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;output&quot;&gt;&lt;strong&gt;Output:&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;78&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The syntax is almost identical to the each method we used earlier but we used &lt;code&gt;group_by&lt;/code&gt; instead. What I am asking here is for each element in the array that’s modulo (The remainder) is equal to 0. This is a complicated way of saying return each integer that is an even number. There is another method that we could add here to refactor our code. I will explain refactoring later.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;even?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;the &lt;code&gt;.even?&lt;/code&gt; method returns every number that is even in the given object. This is a great way to make your code easily readible for someone new to your project or new to coding in general. Now I will give you an idea for hashes. Knowing that hashes have accessible keys and values unlike arrays this will give us a little more creative example.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Strawbery&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Potato&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Orange&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Grape&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Lettuce&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;output-1&quot;&gt;&lt;strong&gt;Output:&lt;/strong&gt;&lt;/h4&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;[[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Strawbery&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Orange&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Grape&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;[[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Potato&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Lettuce&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Similarily to the array it grouped our hash by the object we ask. The biggest difference is in the temporary variables we set. In this example I used &lt;code&gt;key&lt;/code&gt; and &lt;code&gt;value&lt;/code&gt; for easy identification. After we say key and value we ask for it to group by similar values. In this example we would see &lt;code&gt;fruit=&amp;gt;&lt;/code&gt; and &lt;code&gt;vegetable=&amp;gt;&lt;/code&gt; these are the like values and we can see that Strawberry, Orange and Grape are all fruits.&lt;/p&gt;
-
-&lt;p&gt;I am sure you could imagine why this is a good method. It will take a lot of required code and logic and bundle it up into a nice short and readable method. To touch on refactoring real quick. In a simple format refactoring is looking at your initial solution and finding ways to make this easier to read, remove any un neccessary logic, variables or loops. In our industry it impartative for us to write readable code, 9 times out of 10 some one else will eventually take a look at your code and nobody wants to spend hours just trying to understand what you are doing.&lt;/p&gt;
-
-&lt;p&gt;I hope you have some time to play around with some enumerables and find great uses for &lt;code&gt;group_by&lt;/code&gt; and &lt;code&gt;each&lt;/code&gt;. Just remember if you are trying to write easy to read code always try to remove the &lt;code&gt;do&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt; when there is a enumerable method available.&lt;/p&gt;
-</description>
-        <pubDate>Mon, 12 Jan 2015 00:00:00 -0800</pubDate>
-        <link>http://infin80design.github.io/technical,/featured/2015/01/12/hashes-arrays-for-days.html</link>
-        <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/01/12/hashes-arrays-for-days.html</guid>
         
         
         <category>technical,</category>
