@@ -5,7 +5,6 @@ date:   2015-01-22
 categories: Cultural
 ---
 
-###What is pair programming
 Pair programming is exactly what it sounds like two people programming together. Now your probably wondering how the heck does that work. No it is not 1 hand from each person tying on the keyboard or one person watches while the other codes. It is more simply separated in a Driver & Navigator pair.
 
 Just like if you were driving a car and the other was navigating, really nothing different besides we are driving a computer and navigating a program, Ok you got me it is nothing like a road trip! The driver will be the “Typer” meaning he will man the keyboard. The navigator will think of all the logic and tell the driver what to code and where. Remember to reference your code by the line numbers it is impossible for someone who is typing to understand “Change This”. Instead we would say “Change the method name on line 152”. Now that you have an idea of what pair programming is I will explain some pros and cons.

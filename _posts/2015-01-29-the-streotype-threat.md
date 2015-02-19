@@ -5,7 +5,6 @@ date:   2015-01-29
 categories: Cultural
 ---
 
-###What is Stereotype threat?
 Stereotype Threat in the simplest definition is the affect of someone who is worried about the way others may look at them because of a couple different reasons. The most common reason is going to be the color of your skin, this has been apparent in our day to day life for over a 100 years. Better put by Dr. Claude Steele “ The threat of being viewed through the lens of a negative stereotype or the fear of doing something that would inadvertently confirm that stereotype. ”
 
 Stereotype threat is widely seen in black males and females but is not subject just to this scenario. Your average Asian kid could be scared of not succeeding at math because of the stereotype that all Asians are good at math. This is just plain out wrong, all humans are what we call capable human beings. This is the first understanding that when your parents tell you that “You can do anything you put your mind too” is true! It is all on yourself to not fall in stereotypes and make your best effort to succeed in what you love or want to do.
