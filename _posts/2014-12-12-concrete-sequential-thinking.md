@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  "Dev Bootcamp Sea lions 2015 Stand Up! Phase 0 Unit 1 Week 1, Awesome!"
+title: "Concrete Sequential Thinking"
+<!-- title:  "Dev Bootcamp Sea lions 2015 Stand Up! Phase 0 Unit 1 Week 1, Awesome!" -->
 date:   2014-12-12
 categories: Cultural
 ---
