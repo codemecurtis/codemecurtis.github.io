@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ruby Classes</title>
+  <meta name="description" content="It seems to be the obvious for me now a days but almost everything in Ruby is an object or Object. All Object-Oriented languages use them so if you have prio...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="canonical" href="http://infin80design.github.io/cultural/2015/01/22/ruby-classes.html">
+  <link rel="alternate" type="application/rss+xml" title="Code Me Curtis" href="http://infin80design.github.io/feed.xml" />
+
+  <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,200,700' rel='stylesheet' type='text/css'>
+
+<!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+   <a class="site-title" href="/">Code Me Curtis</a>
+    <p class="sub-title">The DBC & More Journey</p>
+
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="/">About Me</a>
+          <!-- <a class="page-link" href="/contact/">Contact</a> -->
+          <a class="page-link" href="/#skills">Portfolio</a>
+      </div>
+    </nav>
+
+    <div class="me">
+      <img src="/imgs/me.jpg" alt="Curtis Seaton">
+    </div>
+
+    <!-- <div class="archives">
+      <h3 class="post-title">Top Posts</h3>
+
+      <ul class="posts">
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/02/11/my-reaction-to-reactjs.html">My Reaction to reactJS</a></li>
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html">Hashes, Objects, Variables Oh My</a></li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html">The Missing Minorites In Tech</a></li>
+            
+        
+            
+                <li><a href="/technical,/featured/2015/01/12/hashes-arrays-for-days.html">Hashes & Arrays for Days</a></li>
+            
+        
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2014/12/11/git-git-git.html">Git, Git, Git</a></li>
+            
+        
+      </ul>
+    </div>
+
+    <h3 class="portfolio">
+      <a href="/index.html">Portfolio</a>
+    </h3> -->
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Ruby Classes</h1>
+    <h3 class="post-sub-title"></h3>
+    <p class="post-meta">Jan 22, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>It seems to be the obvious for me now a days but almost everything in Ruby is an object or <code>Object</code>. All Object-Oriented languages use them so if you have prior experience with Java you may understand easier than others. Add ruby classes is not different than an object. I am sure in the enumerable methods post last week you work paying close attention to the <code>.group_by</code> well have you ever wondered how in the heck you can call this on an object. If you answered yes then great we will move forward with the learning (Those who said no can hit the “I hate this” button below to exit). A Ruby class is a collection of variables, methods and their specific behaviors. In the next couple of paragraphs I will “Lay down the law” for classes.</p>
+
+<h3 id="instance-variables">Instance variables</h3>
+
+<p>Instance variables are created at any point in your class but they are accessible by any method that you create inside of a class. And these are created by using the @ or “at sign” some people may refer to it as an ampersand but rest assured an Ampersand is this &amp; back to the important stuff. I will now show you an example of instance variables in action.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">TvShows</span>
+
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">show</span><span class="p">,</span> <span class="n">channel</span><span class="p">,</span> <span class="n">time</span><span class="p">)</span>
+    <span class="vi">@show</span> <span class="o">=</span> <span class="n">show</span>
+    <span class="vi">@channel</span> <span class="o">=</span> <span class="n">channel</span>
+    <span class="vi">@time</span> <span class="o">=</span> <span class="n">time</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">favorite</span>
+    <span class="nb">puts</span> <span class="s2">&quot;My favorite show is </span><span class="si">#{</span><span class="vi">@show</span><span class="si">}</span><span class="s2"> and it comes on </span><span class="si">#{</span><span class="vi">@channel</span><span class="si">}</span><span class="s2"> at </span><span class="si">#{</span><span class="vi">@time</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="k">end</span>
+
+<span class="k">end</span></code></pre></div>
+
+<p>Not the most interesting but I love the show Vikings and the premiere is right around the corner. :) Now I will explain.</p>
+
+<p>We started out by naming our class <code>TvShows</code> and asked for 3 initial arguments. That would be the T.V. Show name, the channel it is on and the time it comes on. After that we created a new instance method by the name of <code>favorite</code> and passed a simple string.</p>
+
+<p>We also used a nice feature of ruby called string interpolation that is the <code>#{@show}</code> in the method <code>favorite</code>. I am not going to go into full detail about this but I am sure I will have another post about this in the future.
+<em>Hint make sure initialize is spelled correctly, Ruby does not take lightly to misspelling.</em></p>
+
+<h3 id="the-output-and-description">The Output and Description</h3>
+
+<p>The above code is probably the most simple example that anyone could think of but it works for us beginners. So you are probably wondering well now how the heck do I use this, that is my job to show you. When I was first starting out with classes I had a huge issue with forgetting to start with the <code>.new</code> before anything so I will make it my focus.</p>
+
+<p>In order to get the process started you need to set a variable to the new object like so.
+You may remember the <code>Array.new</code>, yeah well it is a lot like that. Form there we will use this to initialize the values of <code>show</code>, <code>channel</code>, <code>time</code>. Now what it the method inside of our class do? good question.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">favorite_show</span> <span class="o">=</span> <span class="no">TvShows</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Vikings&quot;</span><span class="p">,</span> <span class="s2">&quot;History&quot;</span><span class="p">,</span> <span class="s2">&quot;10:00 P.M&quot;</span><span class="p">)</span></code></pre></div>
+
+<p>we can now say <code>favorite_show.favorite</code> and the output should go as follows</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">Output</span> <span class="o">=&gt;</span> <span class="no">My</span> <span class="n">favorite</span> <span class="no">TV</span> <span class="no">Show</span> <span class="n">is</span> <span class="no">Vikings</span><span class="o">.</span> <span class="no">It</span> <span class="n">comes</span> <span class="n">on</span> <span class="n">at</span> <span class="mi">10</span><span class="p">:</span><span class="mo">00</span> <span class="n">P</span><span class="o">.</span><span class="n">M</span> <span class="n">on</span> <span class="no">History</span> <span class="n">channel</span><span class="o">.</span></code></pre></div>
+
+<p>Again note this as the most simple example that classes are used for, As my experience grows yours will grow with it. I see a post in the near future displaying how we can make a game for instance like Bingo or a guessing game or why not even “peek a boo”.Classes can grow pretty long in size just like the original <code>Array</code> class but it is always to keep in mind to break methods up into small pieces of code for other to understand. You will probably spend a lot of time with refactoring classes just because there are so many methods and uses for classes. With that being said what are you still doing here!!! Go out there and practice cause as they say it will make you perfect.</p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    
+
+  </body>
+
+</html>

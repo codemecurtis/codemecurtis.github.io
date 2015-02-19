@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Git, Git, Git</title>
+  <meta name="description" content="What are the best practices associated with using classes vs. ids?">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="canonical" href="http://infin80design.github.io/technical,/featured/2014/12/11/git-git-git.html">
+  <link rel="alternate" type="application/rss+xml" title="Code Me Curtis" href="http://infin80design.github.io/feed.xml" />
+
+  <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,200,700' rel='stylesheet' type='text/css'>
+
+<!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+   <a class="site-title" href="/">Code Me Curtis</a>
+    <p class="sub-title">The DBC & More Journey</p>
+
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="/">About Me</a>
+          <!-- <a class="page-link" href="/contact/">Contact</a> -->
+          <a class="page-link" href="/#skills">Portfolio</a>
+      </div>
+    </nav>
+
+    <div class="me">
+      <img src="/imgs/me.jpg" alt="Curtis Seaton">
+    </div>
+
+    <!-- <div class="archives">
+      <h3 class="post-title">Top Posts</h3>
+
+      <ul class="posts">
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/02/11/my-reaction-to-reactjs.html">My Reaction to reactJS</a></li>
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html">Hashes, Objects, Variables Oh My</a></li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html">The Missing Minorites In Tech</a></li>
+            
+        
+            
+                <li><a href="/technical,/featured/2015/01/12/hashes-arrays-for-days.html">Hashes & Arrays for Days</a></li>
+            
+        
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2014/12/11/git-git-git.html">Git, Git, Git</a></li>
+            
+        
+      </ul>
+    </div>
+
+    <h3 class="portfolio">
+      <a href="/index.html">Portfolio</a>
+    </h3> -->
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Git, Git, Git</h1>
+    <h3 class="post-sub-title"></h3>
+    <p class="post-meta">Dec 11, 2014</p>
+  </header>
+
+  <article class="post-content">
+    <p>What are the best practices associated with using classes vs. ids?</p>
+
+<p>CSS is a very important part of building a website. CSS is like the interior design of your house what good is a house without paint, shingles, a ceiling etc. if you ask me it is not very good at all but some people are different. Today I am going to explain exactly when and how to use ID’s or Classes in your HTML. before I begin about that I feel the need to explain why we add these to the HTML and not the CSS file.
+CSS uses a very easy way to connect to HTML through something called a link. A link tells the HTML to use “This file” for it’s CSS. Here is an example:</p>
+
+<p><code>&lt;link rel="stylesheet" type="text/css" href="your-style-sheet.css" /&gt;</code></p>
+
+<p>Pretty simple to get the files connected but then how does the the CSS know what to target. This is where classes and ID’s come in. In order for use to target a certain element in CSS we need to use the html code such as div, p, h1, h2 etc. In this model we will only be using classes and id’s to easily undertsnad. to add a class to your HTML it is as simple as</p>
+
+<p><code>&lt;div class="your-class"&gt;Hello World!&lt;/div&gt;</code></p>
+
+<p>and for ID</p>
+
+<p><code>&lt;div id="your-id"&gt;Hello World!&lt;/div&gt;</code></p>
+
+<p>You can target classes in CSS with a simple:</p>
+
+<p><code>.your-class</code></p>
+
+<p>And ID</p>
+
+<p><code>#your-id</code></p>
+
+<p>so now that we know how to add a CSS class and ID and how they talk to eachother let’s talk about when to use which one.</p>
+
+<p>ID’s are almost like a dishwasher you really only need 1 dishwasher in your house. Id’s can only be referenced once for each page. ID’s should only be used in a couple scenarios:</p>
+
+<p>If you are setting a link to be targeted on the same page.
+<code>&lt;a href="#about"&gt;</code> This will reference a element id of about and will move you to that portion of the website.</p>
+
+<p>Refering to an item that will not be like others and have unique features. Refering to the unique part of ID’s.</p>
+
+<p>Classes are like the light bulb of your house. Classes are not unique and can be used as many times as you’d like. Classes really come in handy when you are moving thing to left or the right for instance. You can make your CSS look like so:</p>
+
+<p><code>.right{float:right;}</code> This will move an element to the furthest right point and you can add this class to any element you would like on the right side.</p>
+
+<p>You can also add multiple classes to 1 element. Like So:</p>
+
+<p><code>div class="right about-me small"</code> This shows multiple clsses by the name of right, about-me and small. A simple space inbetween classes will solve this for you.</p>
+
+<p>Moral of the story on classes and ID’s is simple. You will use classes a lot more than you will ID’s. If the element is completely unique to anything that you will be creating on the site you should use an id. In any other scenario use a class.</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    
+
+  </body>
+
+</html>

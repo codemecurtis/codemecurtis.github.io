@@ -1,0 +1,174 @@
+code{
+  color:#c7254e;
+  background-color: #fafafa;
+  font-size: 90%;
+  border-radius: 2px;
+}
+pre{
+  background-color: #fafafa;
+}
+.site-header{
+  position: fixed !important;
+  height: 100%;
+  width: 35%;
+  float: left;
+  background-image: url(../imgs/bg.jpg);
+  background-size: 100%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.page-link{
+  color:
+}
+.me{
+  width:150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.me img{
+  border-radius: 150px;
+  border: 2px solid #FFFFFF;
+}
+
+.wrapper{
+  margin: 0 20px;
+}
+.page-content{
+  width: 65%;
+  float: right;
+}
+.site-title{
+  text-align: center;
+  color: #FFFFFF !important;
+  font-family: "Dancing Script";
+  font-size: 4.5em;
+  margin-top:10px;
+  width: 100%;
+}
+.sub-title{
+  position: relative;
+  font-size: 1.5em;
+  text-align: center;
+  color: #E6E6E6;
+}
+.site-title:hover{
+  text-decoration: none;
+}
+.site-nav{
+  float: none;
+  text-align: center;
+}
+.page-link{
+  color: #FFFFFF !important;
+  position: relative;
+  text-align: center;
+  font-family: "Quicksand";
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 2.2em;
+}
+
+/*====================
+  Right Side
+=====================*/
+
+.post{
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.post p{
+  font-size: 0.7em;
+}
+
+.post-link{
+  font-family: "Dancing Script";
+  color: #000000 !important;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 20px;
+}
+
+.read-more{
+  font-size: 0.7em;
+  color: #c7254e !important;
+}
+
+footer{
+  text-align: center;
+}
+
+/*====================
+  Blogs
+=====================*/
+
+ .post-title{
+  font-size: 5em;
+  font-family: "Dancing Script"
+ }
+
+ .post-content{
+  text-align: justify;
+ }
+
+.post-content p{
+  font-size: 1em;
+}
+
+.post-content .gregorc{
+  float: right;
+}
+
+.bg-image{
+  position: relative;
+  width: 740px;
+  height: 260px;
+  top: 0;
+  z-index: 1;
+}
+
+/*====================
+  Footer
+=====================*/
+
+.site-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+/*====================
+  Responsive
+=====================*/
+
+@media screen and (max-width: 768px){
+  .site-header{
+    position: relative !important;
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  .me{
+    margin-bottom: 10px;
+  }
+  .page-content{
+    width: 100%;
+    float: none;
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .site-title{
+    font-size: 3.5em
+  }
+  .site-sub-title{
+    font-size: 0.8em;
+  }
+  .me{
+    display: none;
+  }
+}

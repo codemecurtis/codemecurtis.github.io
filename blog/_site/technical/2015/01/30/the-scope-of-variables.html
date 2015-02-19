@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>The Scope Of Ruby Variables</title>
+  <meta name="description" content="Local Variables">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="canonical" href="http://infin80design.github.io/technical/2015/01/30/the-scope-of-variables.html">
+  <link rel="alternate" type="application/rss+xml" title="Code Me Curtis" href="http://infin80design.github.io/feed.xml" />
+
+  <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,200,700' rel='stylesheet' type='text/css'>
+
+<!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+   <a class="site-title" href="/">Code Me Curtis</a>
+    <p class="sub-title">The DBC & More Journey</p>
+
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="/">About Me</a>
+          <!-- <a class="page-link" href="/contact/">Contact</a> -->
+          <a class="page-link" href="/#skills">Portfolio</a>
+      </div>
+    </nav>
+
+    <div class="me">
+      <img src="/imgs/me.jpg" alt="Curtis Seaton">
+    </div>
+
+    <!-- <div class="archives">
+      <h3 class="post-title">Top Posts</h3>
+
+      <ul class="posts">
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/02/11/my-reaction-to-reactjs.html">My Reaction to reactJS</a></li>
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html">Hashes, Objects, Variables Oh My</a></li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html">The Missing Minorites In Tech</a></li>
+            
+        
+            
+                <li><a href="/technical,/featured/2015/01/12/hashes-arrays-for-days.html">Hashes & Arrays for Days</a></li>
+            
+        
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2014/12/11/git-git-git.html">Git, Git, Git</a></li>
+            
+        
+      </ul>
+    </div>
+
+    <h3 class="portfolio">
+      <a href="/index.html">Portfolio</a>
+    </h3> -->
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">The Scope Of Ruby Variables</h1>
+    <h3 class="post-sub-title"></h3>
+    <p class="post-meta">Jan 30, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <h3 id="local-variableslocal-variables"><a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Local_Variables">Local Variables</a></h3>
+
+<p>Local variables are exactly as they sound, local to the method that they occur in. If you don’t remember how to create a method here you go:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">my_variable</span>
+  <span class="c1"># Do Stuff</span>
+<span class="k">end</span></code></pre></div>
+
+<p>Now to declare a local variable is it relatively simply:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">myVariable</span> <span class="o">=</span> <span class="err">“</span><span class="no">Curtis</span><span class="err">”</span></code></pre></div>
+
+<p>If you notice one specific thing about my variable names, they all start with the a lowercase letter. Later we will touch on variables that are all caps but in order for a local variable to be local it will need a lowercase letter. Now I will show you a more exciting sample:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">my_method</span>
+  <span class="nb">name</span> <span class="o">=</span> <span class="err">“</span><span class="no">Curtis</span><span class="err">”</span>
+  <span class="n">age</span> <span class="o">=</span> <span class="err">“</span><span class="mi">23</span><span class="err">”</span>
+  <span class="n">hometown</span> <span class="o">=</span> <span class="err">“</span><span class="no">Concord</span><span class="err">”</span>
+
+  <span class="nb">puts</span> <span class="err">“</span><span class="no">My</span> <span class="nb">name</span> <span class="n">is</span> <span class="c1">#{name} and I am a #{age} year old, from #{hometown}, CA.”</span>
+<span class="k">end</span></code></pre></div>
+
+<h4 id="output"><strong>output:</strong></h4>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">=&gt;</span>  <span class="no">My</span> <span class="nb">name</span> <span class="n">is</span> <span class="no">Curtis</span> <span class="ow">and</span> <span class="n">I</span> <span class="n">am</span> <span class="n">a</span> <span class="mi">23</span> <span class="n">year</span> <span class="n">old</span><span class="p">,</span> <span class="n">from</span> <span class="no">Concord</span><span class="p">,</span> <span class="no">CA</span><span class="o">.</span></code></pre></div>
+
+<p>when working with local variables there are 2 things to remember, they always start with a lowercase letter and they cannot be used out side the <code>def</code> and <code>end</code> tags.</p>
+
+<h3 id="global-variablesglobal-variables"><a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Global_Variables">Global Variables</a></h3>
+
+<p>Global variables are just that, Variables which can be accessed globally within any part of the program. The can be defined in side a method, outside a method and in a class or even top-level which is outside of the class. In order to write a local va=riable it is just as easy as others just use the <code>$</code>:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">global_method</span>
+  <span class="vg">$global_varaiable</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="k">end</span></code></pre></div>
+
+<p>You probably won’t find yourself using global variables very often in ruby especially since they can cause warnings or errors. Global variables can change their values anywhere in the program which will make it tremendously difficult to keep track of the current value unless you start from the beginning and try to find the source problem.</p>
+
+<p>If you do not initialize a global variable and try to call it then the value is uniquely set to <code>*nil*</code>.</p>
+
+<p>Global varaibles can also be traced by a ruby program so their is something called variable value(s) and these are special suffix to the <code>$</code>. Here is a list for you to review.</p>
+
+<table border="1"><tbody><tr><td>```$!``` </td><td> latest error message </td></tr>
+<tr><td>
+```$@``` </td><td> location of error </td></tr>
+<tr><td>
+```$_``` </td><td> string last read by ```gets``` </td></tr>
+<tr><td>
+```$.``` </td><td> line <em>number</em> last read by interpreter </td></tr>
+<tr><td>
+```$&amp;``` </td><td> string last matched by regexp </td></tr>
+<tr><td>
+```$~``` </td><td> the last regexp match, as an array of subexpressions </td></tr>
+<tr><td>
+```$```<em>n</em> </td><td> the <em>nth</em> subexpression in the last match (same as ```$~[```<em>n</em>```]```) </td></tr>
+<tr><td>
+```$=``` </td><td> case-insensitivity flag </td></tr>
+<tr><td>
+```$/``` </td><td> input record separator </td></tr>
+<tr><td>
+```$\``` </td><td> output record separator </td></tr>
+<tr><td>
+```$0``` </td><td> the name of the ruby script file </td></tr>
+<tr><td>
+```$*``` </td><td> the command line arguments </td></tr>
+<tr><td>
+```$$``` </td><td> interpreter's process ID </td></tr>
+<tr><td>
+```$?``` </td><td> exit status of last executed child process</td></tr></tbody></table>
+
+<p>My only recommendation if you decide to use global variables is that you make your variable names as descriptive as possible and do not change their values later in the program. Get out there and play around with globals and see if there is something you can teach me.</p>
+
+<h3 id="instance-variablesinstance-variables"><a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Instance_Variables">Instance Variables</a></h3>
+
+<p>Instance variables seem to look cooler and their function is pretty cool as well, they all start with the <code>@</code> symbol. Instance variables can be declared in many different ways so let me go ahead show you and I will explain each one.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">MyClass</span>
+
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+  <span class="k">end</span>
+
+<span class="k">end</span>
+
+
+<span class="k">class</span> <span class="nc">MyClass</span>
+
+  <span class="vi">@instance</span> <span class="o">=</span> <span class="err">“</span><span class="n">I</span> <span class="n">am</span> <span class="n">an</span> <span class="no">Instance</span> <span class="no">Vairable</span><span class="err">”</span>
+
+  <span class="k">def</span> <span class="nf">initialize</span>
+    <span class="c1"># Do Something</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+
+<span class="k">class</span> <span class="nc">MyClass</span>
+<span class="kp">attr_accessor</span>  <span class="ss">:instance_variable</span>
+
+  <span class="k">def</span> <span class="nf">initialize</span>
+    <span class="c1">#Do Something</span>
+  <span class="k">end</span>
+
+<span class="k">end</span></code></pre></div>
+
+<p>The first example is one of the most common use cases. This class when called will need and argument or parameter some kind of name. It will then set <code>@name</code> equal to whatever argument you pass when you call the class.</p>
+
+<p>The second example is just simply setting this variable to a string and allowing it to be declared anywhere inside the class or methods in the class.</p>
+
+<p>The third example is a little more confusing but it isn’t as confusing or odd as it seems. This is the <code>attr_accessor</code> there is also <code>attr_reader</code> and <code>attr_writer</code> they are all similar but have slight differences. <code>attr_accessor</code> is accessible anywhere in the module or class and can be manipulated however you’d like. <code>attr_reader</code> is accessible in the entire module as well except that it will only allow you to read what the <code>Instance Variable</code> is set to. Last but not least the <code>attr_writer</code> is accessible by the entire module once again but is only writeable meaning it cannot be read and should only be used to write information in between methods, that is not our focus though.</p>
+
+<h3 id="class-variablesclass-variables"><a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Class_Variables">Class Variables</a></h3>
+
+<p>Identical to <code>instance variables</code> <code>class variables</code> are declared using the <code>@@</code>. Here is an example for <code>class variables</code></p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="nc">MyClass</span>
+
+  <span class="vc">@@class_variable</span> <span class="o">=</span> <span class="no">Class</span>
+
+  <span class="k">def</span> <span class="nf">initialize</span>
+    <span class="vi">@instance_variable</span> <span class="o">=</span> <span class="err">“</span><span class="no">Instance</span><span class="err">”</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">use_case</span>
+    <span class="nb">puts</span> <span class="err">“</span><span class="no">This</span> <span class="n">is</span> <span class="n">a</span> <span class="c1">#{@instance_variable}”</span>
+    <span class="nb">puts</span> <span class="err">“</span><span class="no">This</span> <span class="n">is</span> <span class="n">a</span> <span class="c1">#{@@class_variable)”</span>
+  <span class="k">end</span>
+
+<span class="k">end</span></code></pre></div>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">class</span> <span class="o">=</span> <span class="no">MyClass</span><span class="o">.</span><span class="n">new</span>
+  <span class="n">class</span><span class="o">.</span><span class="n">use_case</span></code></pre></div>
+
+<h4 id="output-1"><strong>Output:</strong></h4>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="o">=&gt;</span>  <span class="no">This</span> <span class="n">is</span> <span class="n">a</span> <span class="no">Instance</span>
+  <span class="o">=&gt;</span> <span class="no">This</span> <span class="n">is</span> <span class="n">a</span> <span class="no">Class</span></code></pre></div>
+
+<p>just as expected. I like to use these for the counter when trying to iterate through arrays but that is not the only reason to use class variables. Note that they are used a lot less than instance variables but ruby wouldn’t have them if they weren’t needed.</p>
+
+<h3 id="constant-variablesconstant-variables"><a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Constant_Scope">Constant Variables</a></h3>
+
+<p>Constant variables are a almost like a global local variable. They can be used globally if called out side of a class or module and within the class if the declared or set inside a class or module, they however cannot be declared or used inside of a method. Constants are declared just like any other variable only it starts or contains capital letters:</p>
+
+<p><code>
+Constant = “I am a constant”
+</code></p>
+
+<p>I am sure you could imagine what this will output but I am sure wondering why and when you would use these. Well just a fair warning <code>Constants</code> are variable in which ruby recommends not to change the value. Like all things in ruby it is abut readability right? So when using a <code>Constant</code> someone new to your code base can easily understand the value of this will most likely stay the same the entire time of the program.</p>
+
+<p>These are the variable scopes that ruby has to offer. There are many different use cases for these variables but they all come with time. I am still working on my own knowledge of when and where to use which style of variable.</p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    
+
+  </body>
+
+</html>

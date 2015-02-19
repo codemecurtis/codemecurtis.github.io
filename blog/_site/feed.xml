@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code Me Curtis</title>
+    <description>This site is for future employers to see my growth throughout Dev Bootcamp and beyond.
+</description>
+    <link>http://infin80design.github.io/</link>
+    <atom:link href="http://infin80design.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 19 Feb 2015 09:41:34 -0800</pubDate>
+    <lastBuildDate>Thu, 19 Feb 2015 09:41:34 -0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Conflict</title>
+        <description>&lt;p&gt;Conflict is something everyone in the world will encounter at some point and time in their life. The hardest part for most people is resolving the conflict or figuring out why conflict is so apparent in their life. I am not particularly a conflicted person, of course I have conflicts but not as much as some people with a more fixed mindset my be. Conflicts can really help you grow as a person if you look at the positive in them and not the negative.&lt;/p&gt;
+
+&lt;p&gt;Most of my conflicts in life were either with my now fiancee or with my parents when going through school. For the sake of my sanity maybe we will talk about a personal conflict outside of the commonalities. I want to talk about a more professional conflict at work and I will give you a quick background.&lt;/p&gt;
+
+&lt;p&gt;I am a eCommerce Manager for a business by the name of &lt;a href=&quot;http://techeyes.com&quot;&gt;TechEyes.com&lt;/a&gt; and I am #2 in the hierarchy of the business so you could imagine how much gets put on my shoulders. I do anything from sales -&amp;gt; marketing -&amp;gt; Web Development. Lucky for me my boss and I don’t have to many conflicts with each other. There was one specific conflict recently that I would use as an example and it happened to be about fraudulent orders.&lt;/p&gt;
+
+&lt;p&gt;We noticed in 2013 fraud orders had really gone up on out website so we went after a change in company policy and I got to design this change being the person who manages all the sales. So we instituted this policy and just about a month ago we had a metting for the year end. Well endless to say we had a good amount of fraud orders still but where the conflict started is when he said “Well we have this X much lost from fraud orders”. I politely asked what the total amount od potentials so what percentage of the saved ones are the completed ones and he said “That was not the point”. I was irritated because I was not looking to show them anything better yet I new I needed to do a better job but could not gauge how good of a job I had been doing in the past.&lt;/p&gt;
+
+&lt;p&gt;I felt a little under appreciated after this needless to say because he made no efforts to comfort me for these losses and we argued for about 10 minutes about what each of us meant by this. I did forget to mention there is a language barrier between us since he has only been in the states for about 5 years now. Unfortunately the resolution of this conflict was not one in the same for a lot of people.&lt;/p&gt;
+
+&lt;p&gt;I started by just agreeing with what he was saying because I could see there was no 2 ways about what he was thinking, which is fine he is the boss but only if you can live with that. After everything cooled down I simply asked him if and when he had time if he could provide me the total number of potential fraud orders and I would do everything else myself. It was not to prove him wrong by any means yet to understand how much harder I should be working towards this and help myself grow. I still to this day have not received it but that is also beyond my care at this point. I just let it pass and continued running the business.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of other ways to resolve conflicts but with this particular situation it makes it tough because they pay your bills and you are there most likely 5 days a week. If I could go back in this situation I probably wouldn’t have asked this question and just used the gauge of I didn’t do a good enough job not to hear about it so I need to work harder on protecting fraud orders and continue my work. I learned in business that it is not always about having an accurate resolution to your problems but a way to ave both parties put it behind them because if you have a constant conflict with people at work you will quickly grow to hate your job and the people who surround you most of your week. If that is the case there is a very likely chance that it will fall into your home and that is the last thingI want to happen.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 15 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/cultural/2015/02/15/conflict.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/02/15/conflict.html</guid>
+        
+        
+        <category>cultural</category>
+        
+      </item>
+    
+      <item>
+        <title>My Reaction to reactJS</title>
+        <description>&lt;p&gt;&lt;a href=&quot;http://facebook.github.io/react/&quot;&gt;React.JS&lt;/a&gt; is an open-source JavaScript library that was built by our friends over at Facebook. They took years of failing their UI (User Interface) on both desktop and mobile applications when it came to rendering data to the user alas react. React is the V (View) in MVC (Model View Controller) it is not an entire language or framework like Angular or Backbone.&lt;/p&gt;
+
+&lt;p&gt;The fashion that react updates the DOM is great because they guarantee that they will only re render what was changed and they do this through the virtual DOM. React uses the virtual DOM diff implementation for ultra-high performance. meaning what ever is different from it’s previous state will now be included when the user asks for it. This sounds quite confusing even to myself because we are so use to making the page refresh when we need something changed, this eliminates all of that and renders your changes lightning fast. React’s also has an optional resource called JSX this is a really helpful tool and I will tell you more now.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-jsx&quot;&gt;What is JSX?&lt;/h3&gt;
+&lt;p&gt;JSX is a XML style object oriented programming language. with react you have the choice of using vanilla JavaScript or you can use JSX. Syntactically JSX is a little easier to right for newer developers but we will work with both styles.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-use-reactreact-js&quot;&gt;How to use &lt;a href=&quot;http://facebook.github.io/react/&quot;&gt;React?&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;React is most commonly paired with Angular or Backbone which i great because both of those JavaScript frameworks have a less focus on their views. So we could use backbone models and controllers to serve data to our react code and have use a very fast rendering of let’s say an autocomplete form but that is a bit much for us now so lets start with a simple Hello World We of course will need to download the library so head over to React’s website and download the latest version. To get started we will need to include 2 SJ files in our HTML.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;build/react.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;build/JSXTransformer.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;example&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is how we are going to get all the fancy new features I will be showing you. This is the simplest for of a use for react. It seems like a lot more coding that if we just declared an HTML document and put an H1 with the value of “hello world”.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;build/react.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;build/JSXTransformer.js&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;example&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;text/jsx&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+              &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;world&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/h1&amp;gt;,&lt;/span&gt;
+              &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;example&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Hello, world!&lt;/p&gt;
+
+&lt;p&gt;Nothing really to fancy here but the future is what we have to think of. What if we want to change the h1 to the user’s name once they login then it makes a lot more sense. So let’s see if we can figure out how to do this but first let’s see our options. We of course could do something really cool where the user’s name is already stored in a database somewhere and we can ask the database for the information but that is a little beyond my knowledge right now so let’s go with a simple input for to update the information.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;converter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Showdown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;converter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MarkdownEditor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;getInitialState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Type some *markdown* here!&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;refs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;textarea&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getDOMNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;MarkdownEditor&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Input&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/h3&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;textarea&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;onChange&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;handleChange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;ref&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;textarea&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;defaultValue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Output&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/h3&amp;gt;&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;className&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;content&amp;quot;&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;dangerouslySetInnerHTML&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;__html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;converter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;makeHtml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/div&amp;gt;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;MarkdownEditor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mountNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This will give use a texture as an put and an out put below it. You can find a working example on Reacts website.&lt;/p&gt;
+
+&lt;p&gt;First off we are setting a variable converter to the value of a new showdown converter.&lt;/p&gt;
+
+&lt;p&gt;We then start getting into the juiciness. We created a variable and passed an initial state value of “Type some &lt;em&gt;markdown&lt;/em&gt; here”. Once we have the initial state we need to created the “changer” in this case the handleChange method. this is setting a new state of the text area to the provided value.&lt;/p&gt;
+
+&lt;p&gt;Now we need to render the textarea and the output. We are going to use that oh so friendly method render. We will then create a div with the a title and the textarea we are going to be changing. We use the onChange method from the request of our earlier code handleChange.&lt;/p&gt;
+
+&lt;p&gt;By the end of all of this we have to finally show the initial state output and then change it once we see it fit. So we will create a new div by the name of “content” and set the html value tot he new states value.&lt;/p&gt;
+
+&lt;p&gt;This is a pretty nice example of just how quick you can get things up and running once you learn the syntax of React. Again this is only about a weeks worth of reading on React with a mix of all DBC work so don’t kill me if I didn’t explain every little detail of the program.&lt;/p&gt;
+
+&lt;h3 id=&quot;who-is-using-react&quot;&gt;Who is using React?&lt;/h3&gt;
+&lt;p&gt;Of course Facebook uses react but who else is using react and how can we find out. Almost all of Instagram’s front-end rendering was rebuilt in react when they got bought out by Facebook back in April or 2012.&lt;/p&gt;
+
+&lt;p&gt;The easiest way to find a website using react of course would be to go here but you can also use our good friend Chrome Dev Tools and see if the react.js library is included somewhere between the head tags. Some companies may choose to place this at the bottom of the page in the footer or may have about 100 different tags in their head so it will be tough to find.&lt;/p&gt;
+
+&lt;p&gt;I will leave you guys with a couple of my favorite examples and showcases and let you work your magic from here.&lt;/p&gt;
+
+&lt;p&gt;This neat example shows how you can use different colors to change the class of the t-shirt, doesn’t it render almost immediately? yea well go thank React for this.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.customink.com/&quot;&gt;Custom Ink&lt;/a&gt; design lab
+Next is a product i use for work called hip chat is has a lot of nice features and uses react quite heavily. Unfortunately to show you, you will need an account on HipChat but it is free if you want to look at the source code.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.hipchat.com/&quot;&gt;Hip Chat&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 11 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/technical,/featured/2015/02/11/my-reaction-to-reactjs.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/02/11/my-reaction-to-reactjs.html</guid>
+        
+        
+        <category>technical,</category>
+        
+        <category>featured</category>
+        
+      </item>
+    
+      <item>
+        <title>Core Values</title>
+        <description>&lt;p&gt;Accomplishment - 3 Confidence - 5 Credibility - 3 Control - 4 Growth - 5 Will-Power - 5 Money - 5&lt;/p&gt;
+
+&lt;h3 id=&quot;values&quot;&gt;Values&lt;/h3&gt;
+
+&lt;p&gt;Values are important to almost anyone in this world from a bum on the street to the most successful people in the world like Elon Musk and Warren Buffett. I am going to talk a little bit about Will-power, it is a very important value the I strictly believe in.&lt;/p&gt;
+
+&lt;p&gt;During Phase 0 I have used a lot of will-power, I have been working 40-46 and having to do 15-25 hours worth of at home work has taken nothing but will-power and determination. This does not only pertain to DBC however. In the day-to-day life will-power is needed, for people who want to loose weight, learn a new skill that is not in a traditional education system.&lt;/p&gt;
+
+&lt;p&gt;As a manager in my current position I get asked questions for advice on a daily. My most common question being in the eCommerce sales business is confidence. In order to succeed in a sales environment or any life environment at that fact confidence plays a big part! I try to show confidence in everything that I do and I am always happy to help another person with their own confidence.&lt;/p&gt;
+
+&lt;p&gt;Stereotype threat if you hadn’t read last weeks post is a situational predicament in which people are or feel themselves to be at risk of confirming negative stereotypes about their social group. I am sure you could understand how confidence, growth and will-power can play a big part in overcoming stereotype threat.&lt;/p&gt;
+
+&lt;p&gt;Confidence is one of the most important aspects of affirming stereotype threat. Next I would say will power to overcome some of those fears. When dealing with stereotype threat you need to have confidence in yourself wether you are trying to fit in at school or in the work place, if you do not walk with confidence people will see that in your body language.&lt;/p&gt;
+
+&lt;p&gt;In some scenarios people may put in the situation of them trying to tell you that you are living up to a negative stereotype and this is one way that confidence and mostly will power will help you overcome this. You have to have strong will power to power through just about any obstacle in life but when you have people holding you back you have to understand that just because they are telling you one thing it does not always mean they are accurate.&lt;/p&gt;
+
+&lt;p&gt;When over coming these obstacles you may or may not realize that you are growing. To overcome any step of stereotype threat causes you to grow in some shape, way or form. Growing in life is something that you do on a daily basis and have done since your birth. People can grow in height, weight, heart etc. If you have a fixed mindset it will make it very tough to overcome stereotype threat. Just remember if you are having a hard time with it you have to take a step back and try to implement confidence, will-power and growth.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 08 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/cultural/2015/02/08/core-value.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/02/08/core-value.html</guid>
+        
+        
+        <category>cultural</category>
+        
+      </item>
+    
+      <item>
+        <title>Hashes, Objects, Variables Oh My</title>
+        <description>&lt;p&gt;After spending the last 4 weeks (6 if you count our break) studying the ins and out’s of Ruby, DBC introduced the almighty Javascript or ECMAScript for you vintage coders. I have very little prior experience with JavaScript typically I push this off to my freelance developers in my current position but none the less I still learned a lot. I first learned that there is in fact 2 names for JavaScript as I mentioned before, whether any ones uses the latter option is beyond me but hey it is still learning right ?! Ruby and JavaScript have a lot of the same  methods/functions and syntactically look similar with some small changes. My job is to show you those changes and we will start by working with Ruby Hashes and JavaScript Objects.&lt;/p&gt;
+
+&lt;h3 id=&quot;hashes-vs-objects&quot;&gt;Hashes vs Objects&lt;/h3&gt;
+
+&lt;p&gt;Ruby hashes are quite handy when building a program they allow you to have a key and value pair. Meaning you can ask the ruby hash for the value of the key which could have many great uses. The Ruby hash is created using the curly braces&lt;code&gt;{}&lt;/code&gt; with either a  hash rocket &lt;code&gt;=&amp;gt;&lt;/code&gt; or a colon &lt;code&gt;:&lt;/code&gt; to separate the key and value.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;myHash&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Value&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Key&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Value&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now there is no preferred method wether you use the hash rocket or the colon but to each is own. I like to use the hash rocket because there are other uses for the colon in Ruby and t just plain out looks cooler.&lt;/p&gt;
+
+&lt;h3 id=&quot;objects&quot;&gt;Objects&lt;/h3&gt;
+
+&lt;p&gt;JavaScript objects are what provided ruby it’s idea for hashes actually. They have quite a bit of similarities but do have some differences as well. Just like hashes javaScript objects are used for key value pairs.Syntactically these look a small bit different but they do both use the curly braces &lt;code&gt;{}&lt;/code&gt;, so here we go.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Curtis&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This method of defining a object is called object literal notation. Notice I have separated these on to multiple lines.  could just as simply put this all on one line like this.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Curtis&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;There is no differences here but there is also the constructor based syntax &lt;code&gt;var myObject = {}&lt;/code&gt;which will simply just create a new blank object unlike Ruby where we use the &lt;code&gt;myHash = Hash.new&lt;/code&gt;and you can add properties to the object later. Which actually brings me to the fact that how we referenced hashes as the key and value, JavaScript developers typically call them properties and values of an object. So to add a property to an object after it has been created is quite simple.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;nx&quot;&gt;myObject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;DBC&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A simple as it looks this adds the location property to the properties and assigns it a value of DBC. So our object would now look like.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myObject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Curtis&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;DBC&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Pretty cool right?! Well we can delete just as simply as saying &lt;code&gt;delete myObject.location&lt;/code&gt; and this will remove what we just added. One last note for objects is that you are always welcome to create an object as a value of a property.&lt;/p&gt;
+
+&lt;h3 id=&quot;defining-variables&quot;&gt;Defining Variables&lt;/h3&gt;
+
+&lt;p&gt;If you read any of my other posts on Ruby I am sure we touched on variables, thy are probably one of the most important parts of Ruby because it holds a value for the life of the program or allows you to change it’s value later down the program. You can define a variable by simply &lt;code&gt;myVariable = true&lt;/code&gt;. Pretty simple and straight forward how ever in JavaScript you would define a variable like so, &lt;code&gt;var myVariable = true;&lt;/code&gt;. The 2 difference s are the fact that in JavaScript you always will use a semi-colon to end the variable definition and you will always begin with the letters &lt;code&gt;var&lt;/code&gt; this is short for variable and this is what tells Javascript that we would like to define a variable. Again pretty similar to Ruby but those small differences can easily be forgot when coding in both JavaScript and Ruby on the same project.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-docs&quot;&gt;The Docs.&lt;/h3&gt;
+
+&lt;p&gt;Unless I was some kind of kid genius that was born with JavaScript and Ruby knowledge i have to use resources to learn just like any other human being. One of the most used resources are the language docs. These are typically written by the people who write the language and know ever in and out of it. Docs are the most detailed resource for programming languages and provides many different use cases and common errors.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-hrefhttpruby-docorgruby-docsa&quot;&gt;&lt;a href=&quot;http://ruby-doc.org/&quot;&gt;Ruby Docs&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/imgs/ruby_docs_homepage.png&quot; alt=&quot;ruby_docs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ruby Docs are simply put, a mess. It is not the most user friendly website to use but after some practice you realize that a designer did not go creating this website, yet a bunch of computer science nerd who couldn’t tell you matching colors if they had to!&lt;/p&gt;
+
+&lt;p&gt;You can see form this homepage that there really isn’t much to be said here besides a simple getting started guide (This is not like your mothers printer you set u for her either) and a couple different version options. Once you finally realize that you should click the ruby version you are using. If you don’t know, go over to the terrifying command line and simple type &lt;code&gt;$ ruby -v&lt;/code&gt; this will out the version of ruby in my case it is 2..0 don’t worry about all those weird numbers and letters after for now.
+&lt;img src=&quot;/imgs/ruby-v.png&quot; alt=&quot;ruby_v&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you select the version of Ruby you have it brings you to another mess of a list but if you scroll down a little ways you will see a filter which is sometimes helpful as long as you know which method you want, or you can scroll for miles looking for something logical to what you need. Once you elect the method it gets very detailed on how everything happens what it does etc. It is just a bit of a task trying to get there at first.&lt;/p&gt;
+
+&lt;h3 id=&quot;javascript-docsjsdocs&quot;&gt;&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide&quot;&gt;JavaScript Docs&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/imgs/JavaScript_MDN_homepage.png&quot; alt=&quot;JavaScript MDN&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just starting with the homepage of JavaScript docs you can see it was properly though out. I mean after al this was created by the great people over at Mozilla and they are revolutionizing the web world! From noon we will refer to the docs as MDN just to save me some arthritis :).&lt;/p&gt;
+
+&lt;p&gt;MDN has docs for almost all languages but this is most importantly used for JavaScript in this article. You can see at the top of the page that they initially list which version of JavaScript is currently supported by all browsers no selecting the version just getting right to it, which brings me to the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide&quot;&gt;JavaScript guide&lt;/a&gt;. This is what my boss likes to say “The Horizontal part of learning” this gives you hands down the best idea of what JavaScript can be used for and all the syntax you need to start coding. Once you finish that you have the wide scale of what javaScript is from there the docs go into a much more detailed “Vertical” learning style.&lt;/p&gt;
+
+&lt;p&gt;I have only had so much time with MDN but it has been a much more pleasant experience than with ruby docs. The amount of examples, use cases and explanations of these are great, they have really took their time with designing these docs and providing useful examples. At the end of the day Docs are Docs they are there for your information to learn not to look pretty and dazzle your creative brain.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 07 Feb 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html</guid>
+        
+        
+        <category>technical,</category>
+        
+        <category>featured</category>
+        
+      </item>
+    
+      <item>
+        <title>The Scope Of Ruby Variables</title>
+        <description>&lt;h3 id=&quot;local-variableslocal-variables&quot;&gt;&lt;a href=&quot;http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Local_Variables&quot;&gt;Local Variables&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Local variables are exactly as they sound, local to the method that they occur in. If you don’t remember how to create a method here you go:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;my_variable&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# Do Stuff&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now to declare a local variable is it relatively simply:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;myVariable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Curtis&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If you notice one specific thing about my variable names, they all start with the a lowercase letter. Later we will touch on variables that are all caps but in order for a local variable to be local it will need a lowercase letter. Now I will show you a more exciting sample:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;my_method&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Curtis&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;hometown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Concord&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
+
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;My&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#{name} and I am a #{age} year old, from #{hometown}, CA.”&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;output&quot;&gt;&lt;strong&gt;output:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;My&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Curtis&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;am&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;year&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;old&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Concord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;CA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;when working with local variables there are 2 things to remember, they always start with a lowercase letter and they cannot be used out side the &lt;code&gt;def&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt; tags.&lt;/p&gt;
+
+&lt;h3 id=&quot;global-variablesglobal-variables&quot;&gt;&lt;a href=&quot;http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Global_Variables&quot;&gt;Global Variables&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Global variables are just that, Variables which can be accessed globally within any part of the program. The can be defined in side a method, outside a method and in a class or even top-level which is outside of the class. In order to write a local va=riable it is just as easy as others just use the &lt;code&gt;$&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;global_method&lt;/span&gt;
+  &lt;span class=&quot;vg&quot;&gt;$global_varaiable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You probably won’t find yourself using global variables very often in ruby especially since they can cause warnings or errors. Global variables can change their values anywhere in the program which will make it tremendously difficult to keep track of the current value unless you start from the beginning and try to find the source problem.&lt;/p&gt;
+
+&lt;p&gt;If you do not initialize a global variable and try to call it then the value is uniquely set to &lt;code&gt;*nil*&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Global varaibles can also be traced by a ruby program so their is something called variable value(s) and these are special suffix to the &lt;code&gt;$&lt;/code&gt;. Here is a list for you to review.&lt;/p&gt;
+
+&lt;table border=&quot;1&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;```$!``` &lt;/td&gt;&lt;td&gt; latest error message &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$@``` &lt;/td&gt;&lt;td&gt; location of error &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$_``` &lt;/td&gt;&lt;td&gt; string last read by ```gets``` &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$.``` &lt;/td&gt;&lt;td&gt; line &lt;em&gt;number&lt;/em&gt; last read by interpreter &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$&amp;amp;``` &lt;/td&gt;&lt;td&gt; string last matched by regexp &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$~``` &lt;/td&gt;&lt;td&gt; the last regexp match, as an array of subexpressions &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$```&lt;em&gt;n&lt;/em&gt; &lt;/td&gt;&lt;td&gt; the &lt;em&gt;nth&lt;/em&gt; subexpression in the last match (same as ```$~[```&lt;em&gt;n&lt;/em&gt;```]```) &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$=``` &lt;/td&gt;&lt;td&gt; case-insensitivity flag &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$/``` &lt;/td&gt;&lt;td&gt; input record separator &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$\``` &lt;/td&gt;&lt;td&gt; output record separator &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$0``` &lt;/td&gt;&lt;td&gt; the name of the ruby script file &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$*``` &lt;/td&gt;&lt;td&gt; the command line arguments &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$$``` &lt;/td&gt;&lt;td&gt; interpreter&#39;s process ID &lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;
+```$?``` &lt;/td&gt;&lt;td&gt; exit status of last executed child process&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;My only recommendation if you decide to use global variables is that you make your variable names as descriptive as possible and do not change their values later in the program. Get out there and play around with globals and see if there is something you can teach me.&lt;/p&gt;
+
+&lt;h3 id=&quot;instance-variablesinstance-variables&quot;&gt;&lt;a href=&quot;http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Instance_Variables&quot;&gt;Instance Variables&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Instance variables seem to look cooler and their function is pretty cool as well, they all start with the &lt;code&gt;@&lt;/code&gt; symbol. Instance variables can be declared in many different ways so let me go ahead show you and I will explain each one.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyClass&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyClass&lt;/span&gt;
+
+  &lt;span class=&quot;vi&quot;&gt;@instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;am&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;an&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Instance&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Vairable&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Do Something&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyClass&lt;/span&gt;
+&lt;span class=&quot;kp&quot;&gt;attr_accessor&lt;/span&gt;  &lt;span class=&quot;ss&quot;&gt;:instance_variable&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;#Do Something&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The first example is one of the most common use cases. This class when called will need and argument or parameter some kind of name. It will then set &lt;code&gt;@name&lt;/code&gt; equal to whatever argument you pass when you call the class.&lt;/p&gt;
+
+&lt;p&gt;The second example is just simply setting this variable to a string and allowing it to be declared anywhere inside the class or methods in the class.&lt;/p&gt;
+
+&lt;p&gt;The third example is a little more confusing but it isn’t as confusing or odd as it seems. This is the &lt;code&gt;attr_accessor&lt;/code&gt; there is also &lt;code&gt;attr_reader&lt;/code&gt; and &lt;code&gt;attr_writer&lt;/code&gt; they are all similar but have slight differences. &lt;code&gt;attr_accessor&lt;/code&gt; is accessible anywhere in the module or class and can be manipulated however you’d like. &lt;code&gt;attr_reader&lt;/code&gt; is accessible in the entire module as well except that it will only allow you to read what the &lt;code&gt;Instance Variable&lt;/code&gt; is set to. Last but not least the &lt;code&gt;attr_writer&lt;/code&gt; is accessible by the entire module once again but is only writeable meaning it cannot be read and should only be used to write information in between methods, that is not our focus though.&lt;/p&gt;
+
+&lt;h3 id=&quot;class-variablesclass-variables&quot;&gt;&lt;a href=&quot;http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Class_Variables&quot;&gt;Class Variables&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Identical to &lt;code&gt;instance variables&lt;/code&gt; &lt;code&gt;class variables&lt;/code&gt; are declared using the &lt;code&gt;@@&lt;/code&gt;. Here is an example for &lt;code&gt;class variables&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyClass&lt;/span&gt;
+
+  &lt;span class=&quot;vc&quot;&gt;@@class_variable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Class&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@instance_variable&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Instance&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;”&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;use_case&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;This&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#{@instance_variable}”&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;“&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;This&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#{@@class_variable)”&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MyClass&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;use_case&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;output-1&quot;&gt;&lt;strong&gt;Output:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;This&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Instance&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;This&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Class&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;just as expected. I like to use these for the counter when trying to iterate through arrays but that is not the only reason to use class variables. Note that they are used a lot less than instance variables but ruby wouldn’t have them if they weren’t needed.&lt;/p&gt;
+
+&lt;h3 id=&quot;constant-variablesconstant-variables&quot;&gt;&lt;a href=&quot;http://www.techotopia.com/index.php/Ruby_Variable_Scope#Ruby_Constant_Scope&quot;&gt;Constant Variables&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;Constant variables are a almost like a global local variable. They can be used globally if called out side of a class or module and within the class if the declared or set inside a class or module, they however cannot be declared or used inside of a method. Constants are declared just like any other variable only it starts or contains capital letters:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+Constant = “I am a constant”
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I am sure you could imagine what this will output but I am sure wondering why and when you would use these. Well just a fair warning &lt;code&gt;Constants&lt;/code&gt; are variable in which ruby recommends not to change the value. Like all things in ruby it is abut readability right? So when using a &lt;code&gt;Constant&lt;/code&gt; someone new to your code base can easily understand the value of this will most likely stay the same the entire time of the program.&lt;/p&gt;
+
+&lt;p&gt;These are the variable scopes that ruby has to offer. There are many different use cases for these variables but they all come with time. I am still working on my own knowledge of when and where to use which style of variable.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 30 Jan 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/technical/2015/01/30/the-scope-of-variables.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/technical/2015/01/30/the-scope-of-variables.html</guid>
+        
+        
+        <category>technical</category>
+        
+      </item>
+    
+      <item>
+        <title>Stereotype Threat - Is it you or is it me?</title>
+        <description>&lt;h3 id=&quot;what-is-stereotype-threat&quot;&gt;What is Stereotype threat?&lt;/h3&gt;
+&lt;p&gt;Stereotype Threat in the simplest definition is the affect of someone who is worried about the way others may look at them because of a couple different reasons. The most common reason is going to be the color of your skin, this has been apparent in our day to day life for over a 100 years. Better put by Dr. Claude Steele “ The threat of being viewed through the lens of a negative stereotype or the fear of doing something that would inadvertently confirm that stereotype. ”&lt;/p&gt;
+
+&lt;p&gt;Stereotype threat is widely seen in black males and females but is not subject just to this scenario. Your average Asian kid could be scared of not succeeding at math because of the stereotype that all Asians are good at math. This is just plain out wrong, all humans are what we call capable human beings. This is the first understanding that when your parents tell you that “You can do anything you put your mind too” is true! It is all on yourself to not fall in stereotypes and make your best effort to succeed in what you love or want to do.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-do-others-see-stereotype-threat&quot;&gt;How do others see Stereotype threat?&lt;/h3&gt;
+&lt;p&gt;People have the right to believe what they want but stereotypes were created by people who have a huge lack of understanding. If everyone of a certain kind does the something would you refer it as normal or stereotype, that is truly the question you should be asking yourself. If you answered with a stereotype maybe you simply want to grab a book and read about this before finalizing that statement.&lt;/p&gt;
+
+&lt;p&gt;I have noticed that a lot of people tend to look at people suffering from stereotype threat as less productive people, un motivated or lacking in education. This is simply incorrect. Stereotype threat can cause many issues not only in the workplace but in your own personal life as well.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-give-actionable-feedback&quot;&gt;How to give actionable feedback&lt;/h3&gt;
+&lt;p&gt;Stereotype threat is something that will most likely be around for years to come but we can only do our best to help the situation and just like most things in life feedback is a great beginning. If you remember from my last post feedback is not constructive for everyone, people tend to look at feedback in only a negative way which is a huge no-no.&lt;/p&gt;
+
+&lt;p&gt;In order to give good feedback we will refer to Dev Bootcamp’s acronym, A.S.K meaning your feedback is Actionable, Specific and Kind. Kind and nice are 2 different things and here is a great example.&lt;/p&gt;
+
+&lt;h4 id=&quot;kind&quot;&gt;Kind:&lt;/h4&gt;
+&lt;p&gt;Your shoes are really nice, but I think you could use an upgrade.&lt;/p&gt;
+
+&lt;h4 id=&quot;nice&quot;&gt;Nice:&lt;/h4&gt;
+&lt;p&gt;Your shoes are really nice, I love them so much, you are the greatest’s person ever for having those shoes.
+You can see here that the person who was nice never really gave anything constructive in their sentence or feedback. There is simply no room for improvement or direction of improvement from being nice. Now don’t get me wrong I am not saying don’t be nice but you have to look at the harsh reality of things and that is “No one is perfect”.&lt;/p&gt;
+
+&lt;p&gt;When you realize someone if falling into the stereotype threat your best bet is to first ask them why they are feeling this way and help to reassure their insecurities with kind words. Just remember feedback is not a thing for harm but for help, in tech especially!&lt;/p&gt;
+
+&lt;h3 id=&quot;what-does-it-feel-like&quot;&gt;What does it feel like?&lt;/h3&gt;
+&lt;p&gt;I can definitely tell you that I have experienced this personally, as a half black half white young man with tattoos it is a little hard not to, unless you do something about it. I experienced this a lot in my younger teen years. When I was first trying to decide what i wanted to do with my life I had always had a liking to computers and started building my own and learning them. With my dad being in the industry I probably should have exercised the resource a little more earlier on but that is the past.&lt;/p&gt;
+
+&lt;p&gt;I always felt because i was a young black adult that I would have a much harder time to find a job in an industry mostly filled with whites and asians. I quickly got discouraged and started pursuing more stereotype life style hanging around with the wrong crowd and all I was doing was contributing to the stereotype threat I was experiencing. That lasted for a few years and when I made the final wrong choice and got myself put away for sometime is really what helped me to change this mindset.&lt;/p&gt;
+
+&lt;p&gt;When you are in a place that is filled with a lot of stereotypes you either fit in or you find your true self and that is exactly what happened to me. I realized this lifestyle was not for me and could not even explain to myself, why I was choosing this path. This is when my dad got much more involved in the situation. I never really till now realized what was happening but now that i know what Stereotype threat is I can understand that is what i was experiencing.&lt;/p&gt;
+
+&lt;p&gt;I started asking my dad much more questions about how he did especially in his time because his early years blacks were in a much lower class and looked at a lot more negative then before. He said “ I just worked hard!” as simple as that sounded he has always explained this to me. Only you can let other people give you distractions. He told me to look at my white side if I am having trouble with this because the more you let this affect you then the less opportunities you will have.&lt;/p&gt;
+
+&lt;p&gt;Needless to say this was not the only conversation I had with my father but because I made a wrong decision it was little easier for me to overcome this derogatory thought. I quickly continued my path of building computers and learned that I did not want to do this my entire life and look at me now! Succeeding at Dev Bootcamp and on a great path to make a huge impact in the industry.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jan 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/cultural/2015/01/29/the-streotype-threat.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/01/29/the-streotype-threat.html</guid>
+        
+        
+        <category>cultural</category>
+        
+      </item>
+    
+      <item>
+        <title>The Value of Pair Programming</title>
+        <description>&lt;h3 id=&quot;what-is-pair-programming&quot;&gt;What is pair programming&lt;/h3&gt;
+&lt;p&gt;Pair programming is exactly what it sounds like two people programming together. Now your probably wondering how the heck does that work. No it is not 1 hand from each person tying on the keyboard or one person watches while the other codes. It is more simply separated in a Driver &amp;amp; Navigator pair.&lt;/p&gt;
+
+&lt;p&gt;Just like if you were driving a car and the other was navigating, really nothing different besides we are driving a computer and navigating a program, Ok you got me it is nothing like a road trip! The driver will be the “Typer” meaning he will man the keyboard. The navigator will think of all the logic and tell the driver what to code and where. Remember to reference your code by the line numbers it is impossible for someone who is typing to understand “Change This”. Instead we would say “Change the method name on line 152”. Now that you have an idea of what pair programming is I will explain some pros and cons.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-difficulties-of-pairing-remote&quot;&gt;The difficulties of pairing remote&lt;/h3&gt;
+&lt;p&gt;Dev Bootcamp has a special phase called Phase 0 which seems to be aprrporiately named since when programming you start counting at 0 and not 1. This portion of DBC is mandatory remote work for 9 weeks and is broken up into to 3 units of 3 weeks. If you have ever tried to learn ruby on your own it is like this but with a forced structure.&lt;/p&gt;
+
+&lt;p&gt;DBC requires you to pair at least 2 times a week which is great but I am sure you could imagine how hard this is to manage if you are holding a full time job or have kids.. Luckily for us there is something called a Google Hangout and friendly cohort mates that work with your schedule.&lt;/p&gt;
+
+&lt;p&gt;If you are not familiar with hangouts it is similar to Skype(If you don’t know what Skype is, I am not sure why you are reading this). You can share your screen, chat, add fun little effects and more, I mean it’s google what do you expect right?. As fine and dandy as that sounds I am sure you are already thinking of the down falls.&lt;/p&gt;
+
+&lt;p&gt;The biggest problems are internet connection and location. When pairing remotely you need to make sure that this is done in a quite and content place which is not always feasible for developers. Some work solely out of coffee shops because their moms basement doesn’t get anything better than 3 mbps or simply just don’t want to pay for internet. So I am sure you could understand how communication can be affected.&lt;/p&gt;
+
+&lt;p&gt;From my experience body language is the second most important part of pair or peer programming. It is hard to get a feel for your pairs body language because maybe you can only see their face or their camera is turned off to save bandwidth so on and so forth. You could imagine working on a problem for 2 hours and you guys hit a road block, it has been 20 minutes of just pure scratching each others head. Well with body language you would be able to see that and recommend to take a break for a few minutes and then get back to the problem with a fresh mind.&lt;/p&gt;
+
+&lt;p&gt;I think in general pairing remotely is not the best way for this to happen but it works. I will explain how and why it works better than working by yourself in just a brief minute but before I do just know that weather you pair remotely or in person it is a lot more constructive than beating your skull because you cannot solve a problem.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-reward-of-peer-programming&quot;&gt;The reward of peer programming&lt;/h3&gt;
+&lt;p&gt;Pair programming has a lot more pros than cons in this situation but I will mention only a couple so keep that in mind. The first is the power of learning. When pair programming you never really know what your pairs knowledge base is, he could be a pure ruby logic genius but not know the syntax , he could be a great programmer all around or he could simply just pretend like he knew ruby. Either way you are going to gain some knowledge from your pair.&lt;/p&gt;
+
+&lt;p&gt;I find that most times when pairing there is a large amount of ideas bouncing back and forth. Such as “What about the .each method” or “No the .each_with_index will work”. So what of you don’t know what the .each with index method is, your pair should be able to easily explain what this does and how it can be used.&lt;/p&gt;
+
+&lt;p&gt;Another scenario is my favorite. You know when you are just starring off into your code hopelessly wondering why this code is not passing the test. You decide “Hey a pair would be great for me right now.” Ryan is online so you ping him, you ask if he would you mind pairing with me when he is free and that I am having an issue. He comes over to your desk to help and immediately points out that you misspelled initialize. If you read my ruby classes post you will know how important this is. You run your test and it passes, way better than having to spend hours re writing methods when they have already worked. As you can see pair programming can be a heart ache but way more of a help than anything. It’s essentially running 2 brains on 1 program and as anybody says 2 is better than 1 right.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-power-of-feedback&quot;&gt;The Power of Feedback&lt;/h3&gt;
+&lt;p&gt;DBC relies a lot on feedback through he process of phase 0. You are required to give you pair feedback after each session weather you have paired with them before or not. This is not the easiest task as you would think your feedback needs to be in the ASK method meaning “Actionable, Specific and Kind”. The kind part is not so hard and the specific as well but when it comes to the actionable it can sometime get tricky.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-implement-feedback&quot;&gt;How to implement feedback&lt;/h3&gt;
+&lt;p&gt;Implementing feedback is not as easy as it seems. The way DBC provides your feedback is a little weary, meaning that you can’t actually see who led you what feedback so it is up to you to pay attention to who has left feedback and who as not. None the less Feedback is something that anyone in any field can relate to. I specifically implement feedback in what I think is a unique way.&lt;/p&gt;
+
+&lt;p&gt;I like to look at each aspect that my pair mentions in their feedback and try to implement a different one each pairing session. After that I look for my pair feedback to see if they noticed any change if they did not mention the implemented point I like to ask in a polite way if I improved in the certain aspect via email.&lt;/p&gt;
+
+&lt;p&gt;I find that some people try to implement everything at once but that can sometimes cause more issues in your pairing session. Everyone is a little different so try out your own methods of course this is just on of many options.&lt;/p&gt;
+
+&lt;h3 id=&quot;providing-solid-feedback&quot;&gt;Providing solid feedback&lt;/h3&gt;
+&lt;p&gt;It is just as important to provide feedback as it is to get feedback. Feedback helps you improve not only as a coder but as an overall person. Giving your pair or any one at that point feedback is no easy task. I have had a chance for my feedback to be rated and I definitely could work on a few aspects myself.&lt;/p&gt;
+
+&lt;p&gt;To be honest there are so many great people that I have paired with that I feel it may be a little hard to give them some constructive feedback but I have come to the conclusion if you think about it hard enough there is always something constructive to say weather it is to keep up a good job or you are horrible at pairing.&lt;/p&gt;
+
+&lt;p&gt;I prefer myself to take notes during my session so it is a little easier to remember what you did and did not like. Often times I don’t get to leaving my pair feedback till the next day because my brain is just fried from such a hard challenge or maybe even 2 days later cause it slipped my mind. This is where having notes really comes handy especially when you are retaining as much information as a Phase 0 DBC student. Pairing and feedback are no easy task but it is a task that I can seem to appreciate more and more as time goes on.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Jan 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/cultural/2015/01/22/the-values-of-pair-programming.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/01/22/the-values-of-pair-programming.html</guid>
+        
+        
+        <category>cultural</category>
+        
+      </item>
+    
+      <item>
+        <title>Ruby Classes</title>
+        <description>&lt;p&gt;It seems to be the obvious for me now a days but almost everything in Ruby is an object or &lt;code&gt;Object&lt;/code&gt;. All Object-Oriented languages use them so if you have prior experience with Java you may understand easier than others. Add ruby classes is not different than an object. I am sure in the enumerable methods post last week you work paying close attention to the &lt;code&gt;.group_by&lt;/code&gt; well have you ever wondered how in the heck you can call this on an object. If you answered yes then great we will move forward with the learning (Those who said no can hit the “I hate this” button below to exit). A Ruby class is a collection of variables, methods and their specific behaviors. In the next couple of paragraphs I will “Lay down the law” for classes.&lt;/p&gt;
+
+&lt;h3 id=&quot;instance-variables&quot;&gt;Instance variables&lt;/h3&gt;
+
+&lt;p&gt;Instance variables are created at any point in your class but they are accessible by any method that you create inside of a class. And these are created by using the @ or “at sign” some people may refer to it as an ampersand but rest assured an Ampersand is this &amp;amp; back to the important stuff. I will now show you an example of instance variables in action.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TvShows&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@show&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@channel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;
+    &lt;span class=&quot;vi&quot;&gt;@time&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;favorite&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;My favorite show is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@show&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; and it comes on &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@channel&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; at &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@time&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Not the most interesting but I love the show Vikings and the premiere is right around the corner. :) Now I will explain.&lt;/p&gt;
+
+&lt;p&gt;We started out by naming our class &lt;code&gt;TvShows&lt;/code&gt; and asked for 3 initial arguments. That would be the T.V. Show name, the channel it is on and the time it comes on. After that we created a new instance method by the name of &lt;code&gt;favorite&lt;/code&gt; and passed a simple string.&lt;/p&gt;
+
+&lt;p&gt;We also used a nice feature of ruby called string interpolation that is the &lt;code&gt;#{@show}&lt;/code&gt; in the method &lt;code&gt;favorite&lt;/code&gt;. I am not going to go into full detail about this but I am sure I will have another post about this in the future.
+&lt;em&gt;Hint make sure initialize is spelled correctly, Ruby does not take lightly to misspelling.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-output-and-description&quot;&gt;The Output and Description&lt;/h3&gt;
+
+&lt;p&gt;The above code is probably the most simple example that anyone could think of but it works for us beginners. So you are probably wondering well now how the heck do I use this, that is my job to show you. When I was first starting out with classes I had a huge issue with forgetting to start with the &lt;code&gt;.new&lt;/code&gt; before anything so I will make it my focus.&lt;/p&gt;
+
+&lt;p&gt;In order to get the process started you need to set a variable to the new object like so.
+You may remember the &lt;code&gt;Array.new&lt;/code&gt;, yeah well it is a lot like that. Form there we will use this to initialize the values of &lt;code&gt;show&lt;/code&gt;, &lt;code&gt;channel&lt;/code&gt;, &lt;code&gt;time&lt;/code&gt;. Now what it the method inside of our class do? good question.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;favorite_show&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TvShows&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Vikings&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;History&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;10:00 P.M&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;we can now say &lt;code&gt;favorite_show.favorite&lt;/code&gt; and the output should go as follows&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Output&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;My&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;favorite&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TV&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Show&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Vikings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;It&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;comes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;P&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;M&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;History&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;channel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Again note this as the most simple example that classes are used for, As my experience grows yours will grow with it. I see a post in the near future displaying how we can make a game for instance like Bingo or a guessing game or why not even “peek a boo”.Classes can grow pretty long in size just like the original &lt;code&gt;Array&lt;/code&gt; class but it is always to keep in mind to break methods up into small pieces of code for other to understand. You will probably spend a lot of time with refactoring classes just because there are so many methods and uses for classes. With that being said what are you still doing here!!! Go out there and practice cause as they say it will make you perfect.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 22 Jan 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/cultural/2015/01/22/ruby-classes.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/cultural/2015/01/22/ruby-classes.html</guid>
+        
+        
+        <category>cultural</category>
+        
+      </item>
+    
+      <item>
+        <title>The Missing Minorites In Tech</title>
+        <description>&lt;p&gt;I remember sometime about a year ago I was reading a story about how @Twiiter wasn’t meeting the global standards for minorites and it gave me that much more of a push to make a change for this. As of now there is only 6.1 percent of the industry which is a underrepresented women or minority says &lt;a href=&quot;http://www.insightintodiversity.com/&quot;&gt;Insight to Diversity&lt;/a&gt;. There are many ways to change this but the only way it is going to last is by teaching our youth how important the tech industry is not only now but in the future.&lt;/p&gt;
+
+&lt;h3 id=&quot;top-universities-turn-out-black-and-hispanic-computer-science-and-computer-engineering-graduates-at-twice-the-rate-that-leading-technology-companies-hire-them&quot;&gt;“Top universities turn out black and Hispanic computer science and computer engineering graduates at twice the rate that leading technology companies hire them.”&lt;/h3&gt;
+
+&lt;p&gt;I can’t say exactly what the problem is because it would be complete speculation but having done some research it seems that even the “qualified” minorities with the proper degrees are not getting hired. From my understanding in order to compete and prosper in the industry you need a minimum amount of minorites as required by the Equal opportunity employer group. There are twice as many minority graduates then there are actually being hired. This is very off putting for the young adult looking for a new career becuase he automatically get’s the feeling it will be “too hard to find a job”. I don’t know about you but when I was coming out of high school I had an idea that I wanted to be in the tech industry and was discouraged by many stories like these.&lt;/p&gt;
+
+&lt;p&gt;Luckily for me my dad is a very successful telecommunications engineer. This was a great influence for me to make the long stride into the industry. In order to make this possible not only do we need more tech engineers, support and general employees but we need to own more of the busineeses. If it is true that business managers, executives and owners are not hiring because of “personal reasons” then if minorities own more tech related business there won’t be as much spectulation on this issue.&lt;/p&gt;
+
+&lt;p&gt;There is also the issue of the minorities not picking this path for their career. With only 12% of U.S. colleges having minorties graduate with a CS degree it is hard to make an impact into the industry. As humans not everyone is equipped for this “type” of job. If we had more minorites graducting with a CS degree we may see an increase in high-end talent which is what the top tech companies are looking for. We cannot put all the blame on the fact that they are not hiring minorties but that more of them need to have qualified education in order to fit in.&lt;/p&gt;
+
+&lt;p&gt;Now I don’t want anyone to think from this article that I am subject to exactly everything I have stated. I used multiple resources such as the silicon valley newspaper, USA today and others. I can’t stress enough how much the act of influence will help this industry. I hope that one day once I get settled into the industry that I will be able to provide a wide influence for our minority youth in the tech industry. Having help with mom-profit orginizations in other industries I think it is something that we are just missing in the early stages of my youth. In all it is a 2 sided battle that will hopefully change in the coming years and if I can be apart of this, It would be my pleasure.&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 12 Jan 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html</guid>
+        
+        
+        <category>technical,</category>
+        
+        <category>featured</category>
+        
+      </item>
+    
+      <item>
+        <title>Hashes &amp; Arrays for Days</title>
+        <description>&lt;p&gt;Enumerable is simply a collection of methods that iterate through a collection of objects and run the following block. I am sure that went over your head so let me break it down for you. Lets start with iterating this is the act of separating each element and providing it an action is what is called a block. I will give you an example.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;World&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;He is crazy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Wait&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;What&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Alternitevly we could say&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Hello&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;World&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;He is crazy&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Wait&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;What&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;each&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is saying go through each element in arr which is an array and print each value on to the screen. Now back to the collection of objects which is in this scenario arr it can either be an array or hash. The curly braces after the each method is the block which is creating a temporary variable of &lt;i&gt;element&lt;/i&gt; and telling to print each element of the array. This is a great way to make 1 line solutions and have it very human readable.&lt;/p&gt;
+
+&lt;h3 id=&quot;groupby&quot;&gt;Group_by&lt;/h3&gt;
+&lt;p&gt;I will now go through one of my more favorite enumerable methos which is &lt;code&gt;group_by&lt;/code&gt;. Is simple &lt;code&gt;group_by&lt;/code&gt; does eaxtly that by the value that you ask for. As ruby explains it&lt;/p&gt;
+&lt;blockquote&gt;
+  &quot;Groups the collection by result of the block. Returns a hash where the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key.
+  &amp;nbsp;
+  If no block is given an enumerator is returned.&quot;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As an example I will group an array and a hash so let’s start with an array.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;45&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;59&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;78&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;83&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;output&quot;&gt;&lt;strong&gt;Output:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;78&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The syntax is almost identical to the each method we used earlier but we used &lt;code&gt;group_by&lt;/code&gt; instead. What I am asking here is for each element in the array that’s modulo (The remainder) is equal to 0. This is a complicated way of saying return each integer that is an even number. There is another method that we could add here to refactor our code. I will explain refactoring later.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;element&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;even?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;the &lt;code&gt;.even?&lt;/code&gt; method returns every number that is even in the given object. This is a great way to make your code easily readible for someone new to your project or new to coding in general. Now I will give you an idea for hashes. Knowing that hashes have accessible keys and values unlike arrays this will give us a little more creative example.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Strawbery&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Potato&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Orange&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Grape&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Lettuce&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;output-1&quot;&gt;&lt;strong&gt;Output:&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;[[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Strawbery&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Orange&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Grape&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;fruit&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;[[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Potato&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;Lettuce&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;vegetable&amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Similarily to the array it grouped our hash by the object we ask. The biggest difference is in the temporary variables we set. In this example I used &lt;code&gt;key&lt;/code&gt; and &lt;code&gt;value&lt;/code&gt; for easy identification. After we say key and value we ask for it to group by similar values. In this example we would see &lt;code&gt;fruit=&amp;gt;&lt;/code&gt; and &lt;code&gt;vegetable=&amp;gt;&lt;/code&gt; these are the like values and we can see that Strawberry, Orange and Grape are all fruits.&lt;/p&gt;
+
+&lt;p&gt;I am sure you could imagine why this is a good method. It will take a lot of required code and logic and bundle it up into a nice short and readable method. To touch on refactoring real quick. In a simple format refactoring is looking at your initial solution and finding ways to make this easier to read, remove any un neccessary logic, variables or loops. In our industry it impartative for us to write readable code, 9 times out of 10 some one else will eventually take a look at your code and nobody wants to spend hours just trying to understand what you are doing.&lt;/p&gt;
+
+&lt;p&gt;I hope you have some time to play around with some enumerables and find great uses for &lt;code&gt;group_by&lt;/code&gt; and &lt;code&gt;each&lt;/code&gt;. Just remember if you are trying to write easy to read code always try to remove the &lt;code&gt;do&lt;/code&gt; and &lt;code&gt;end&lt;/code&gt; when there is a enumerable method available.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Jan 2015 00:00:00 -0800</pubDate>
+        <link>http://infin80design.github.io/technical,/featured/2015/01/12/hashes-arrays-for-days.html</link>
+        <guid isPermaLink="true">http://infin80design.github.io/technical,/featured/2015/01/12/hashes-arrays-for-days.html</guid>
+        
+        
+        <category>technical,</category>
+        
+        <category>featured</category>
+        
+      </item>
+    
+  </channel>
+</rss>

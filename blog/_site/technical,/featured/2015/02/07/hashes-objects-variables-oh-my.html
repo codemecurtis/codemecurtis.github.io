@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Hashes, Objects, Variables Oh My</title>
+  <meta name="description" content="After spending the last 4 weeks (6 if you count our break) studying the ins and out’s of Ruby, DBC introduced the almighty Javascript or ECMAScript for you v...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="canonical" href="http://infin80design.github.io/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html">
+  <link rel="alternate" type="application/rss+xml" title="Code Me Curtis" href="http://infin80design.github.io/feed.xml" />
+
+  <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,200,700' rel='stylesheet' type='text/css'>
+
+<!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+   <a class="site-title" href="/">Code Me Curtis</a>
+    <p class="sub-title">The DBC & More Journey</p>
+
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+      <div class="trigger">
+          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="/">About Me</a>
+          <!-- <a class="page-link" href="/contact/">Contact</a> -->
+          <a class="page-link" href="/#skills">Portfolio</a>
+      </div>
+    </nav>
+
+    <div class="me">
+      <img src="/imgs/me.jpg" alt="Curtis Seaton">
+    </div>
+
+    <!-- <div class="archives">
+      <h3 class="post-title">Top Posts</h3>
+
+      <ul class="posts">
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/02/11/my-reaction-to-reactjs.html">My Reaction to reactJS</a></li>
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/02/07/hashes-objects-variables-oh-my.html">Hashes, Objects, Variables Oh My</a></li>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2015/01/12/the-missing-minorites-in-tech.html">The Missing Minorites In Tech</a></li>
+            
+        
+            
+                <li><a href="/technical,/featured/2015/01/12/hashes-arrays-for-days.html">Hashes & Arrays for Days</a></li>
+            
+        
+            
+        
+            
+        
+            
+                <li><a href="/technical,/featured/2014/12/11/git-git-git.html">Git, Git, Git</a></li>
+            
+        
+      </ul>
+    </div>
+
+    <h3 class="portfolio">
+      <a href="/index.html">Portfolio</a>
+    </h3> -->
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Hashes, Objects, Variables Oh My</h1>
+    <h3 class="post-sub-title"></h3>
+    <p class="post-meta">Feb 7, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>After spending the last 4 weeks (6 if you count our break) studying the ins and out’s of Ruby, DBC introduced the almighty Javascript or ECMAScript for you vintage coders. I have very little prior experience with JavaScript typically I push this off to my freelance developers in my current position but none the less I still learned a lot. I first learned that there is in fact 2 names for JavaScript as I mentioned before, whether any ones uses the latter option is beyond me but hey it is still learning right ?! Ruby and JavaScript have a lot of the same  methods/functions and syntactically look similar with some small changes. My job is to show you those changes and we will start by working with Ruby Hashes and JavaScript Objects.</p>
+
+<h3 id="hashes-vs-objects">Hashes vs Objects</h3>
+
+<p>Ruby hashes are quite handy when building a program they allow you to have a key and value pair. Meaning you can ask the ruby hash for the value of the key which could have many great uses. The Ruby hash is created using the curly braces<code>{}</code> with either a  hash rocket <code>=&gt;</code> or a colon <code>:</code> to separate the key and value.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">myHash</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="err">“</span><span class="no">Key</span><span class="err">”</span> <span class="o">=&gt;</span> <span class="err">“</span><span class="no">Value</span><span class="err">”</span><span class="p">,</span>
+  <span class="err">“</span><span class="no">Key</span><span class="err">”</span><span class="p">:</span> <span class="err">“</span><span class="no">Value</span><span class="err">”</span>
+<span class="p">}</span></code></pre></div>
+
+<p>Now there is no preferred method wether you use the hash rocket or the colon but to each is own. I like to use the hash rocket because there are other uses for the colon in Ruby and t just plain out looks cooler.</p>
+
+<h3 id="objects">Objects</h3>
+
+<p>JavaScript objects are what provided ruby it’s idea for hashes actually. They have quite a bit of similarities but do have some differences as well. Just like hashes javaScript objects are used for key value pairs.Syntactically these look a small bit different but they do both use the curly braces <code>{}</code>, so here we go.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">myObject</span> <span class="o">=</span> <span class="p">{</span>
+<span class="nx">name</span> <span class="o">:</span> <span class="err">“</span><span class="nx">Curtis</span><span class="err">”</span>
+<span class="p">};</span></code></pre></div>
+
+<p>This method of defining a object is called object literal notation. Notice I have separated these on to multiple lines.  could just as simply put this all on one line like this.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">myObject</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">name</span> <span class="o">:</span> <span class="err">“</span><span class="nx">Curtis</span><span class="err">”</span><span class="p">,</span> <span class="nx">age</span><span class="o">:</span> <span class="mi">23</span><span class="p">};</span></code></pre></div>
+
+<p>There is no differences here but there is also the constructor based syntax <code>var myObject = {}</code>which will simply just create a new blank object unlike Ruby where we use the <code>myHash = Hash.new</code>and you can add properties to the object later. Which actually brings me to the fact that how we referenced hashes as the key and value, JavaScript developers typically call them properties and values of an object. So to add a property to an object after it has been created is quite simple.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">myObject</span><span class="p">.</span><span class="nx">location</span> <span class="o">=</span> <span class="err">“</span><span class="nx">DBC</span><span class="err">”</span> <span class="p">;</span></code></pre></div>
+
+<p>A simple as it looks this adds the location property to the properties and assigns it a value of DBC. So our object would now look like.</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">myObject</span> <span class="o">=</span> <span class="p">{</span>
+<span class="nx">name</span> <span class="o">:</span> <span class="err">“</span><span class="nx">Curtis</span><span class="err">”</span><span class="p">,</span>
+<span class="nx">age</span><span class="o">:</span> <span class="mi">23</span><span class="p">,</span>
+<span class="nx">location</span><span class="o">:</span> <span class="err">“</span><span class="nx">DBC</span><span class="err">”</span>
+<span class="p">};</span></code></pre></div>
+
+<p>Pretty cool right?! Well we can delete just as simply as saying <code>delete myObject.location</code> and this will remove what we just added. One last note for objects is that you are always welcome to create an object as a value of a property.</p>
+
+<h3 id="defining-variables">Defining Variables</h3>
+
+<p>If you read any of my other posts on Ruby I am sure we touched on variables, thy are probably one of the most important parts of Ruby because it holds a value for the life of the program or allows you to change it’s value later down the program. You can define a variable by simply <code>myVariable = true</code>. Pretty simple and straight forward how ever in JavaScript you would define a variable like so, <code>var myVariable = true;</code>. The 2 difference s are the fact that in JavaScript you always will use a semi-colon to end the variable definition and you will always begin with the letters <code>var</code> this is short for variable and this is what tells Javascript that we would like to define a variable. Again pretty similar to Ruby but those small differences can easily be forgot when coding in both JavaScript and Ruby on the same project.</p>
+
+<h3 id="the-docs">The Docs.</h3>
+
+<p>Unless I was some kind of kid genius that was born with JavaScript and Ruby knowledge i have to use resources to learn just like any other human being. One of the most used resources are the language docs. These are typically written by the people who write the language and know ever in and out of it. Docs are the most detailed resource for programming languages and provides many different use cases and common errors.</p>
+
+<h3 id="a-hrefhttpruby-docorgruby-docsa"><a href="http://ruby-doc.org/">Ruby Docs</a></h3>
+<p><img src="/imgs/ruby_docs_homepage.png" alt="ruby_docs" /></p>
+
+<p>Ruby Docs are simply put, a mess. It is not the most user friendly website to use but after some practice you realize that a designer did not go creating this website, yet a bunch of computer science nerd who couldn’t tell you matching colors if they had to!</p>
+
+<p>You can see form this homepage that there really isn’t much to be said here besides a simple getting started guide (This is not like your mothers printer you set u for her either) and a couple different version options. Once you finally realize that you should click the ruby version you are using. If you don’t know, go over to the terrifying command line and simple type <code>$ ruby -v</code> this will out the version of ruby in my case it is 2..0 don’t worry about all those weird numbers and letters after for now.
+<img src="/imgs/ruby-v.png" alt="ruby_v" /></p>
+
+<p>Once you select the version of Ruby you have it brings you to another mess of a list but if you scroll down a little ways you will see a filter which is sometimes helpful as long as you know which method you want, or you can scroll for miles looking for something logical to what you need. Once you elect the method it gets very detailed on how everything happens what it does etc. It is just a bit of a task trying to get there at first.</p>
+
+<h3 id="javascript-docsjsdocs"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript Docs</a></h3>
+<p><img src="/imgs/JavaScript_MDN_homepage.png" alt="JavaScript MDN" /></p>
+
+<p>Just starting with the homepage of JavaScript docs you can see it was properly though out. I mean after al this was created by the great people over at Mozilla and they are revolutionizing the web world! From noon we will refer to the docs as MDN just to save me some arthritis :).</p>
+
+<p>MDN has docs for almost all languages but this is most importantly used for JavaScript in this article. You can see at the top of the page that they initially list which version of JavaScript is currently supported by all browsers no selecting the version just getting right to it, which brings me to the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript guide</a>. This is what my boss likes to say “The Horizontal part of learning” this gives you hands down the best idea of what JavaScript can be used for and all the syntax you need to start coding. Once you finish that you have the wide scale of what javaScript is from there the docs go into a much more detailed “Vertical” learning style.</p>
+
+<p>I have only had so much time with MDN but it has been a much more pleasant experience than with ruby docs. The amount of examples, use cases and explanations of these are great, they have really took their time with designing these docs and providing useful examples. At the end of the day Docs are Docs they are there for your information to learn not to look pretty and dazzle your creative brain.</p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    
+
+  </body>
+
+</html>
