@@ -1,72 +1,13 @@
 ---
 layout: post
-title:  "Git, Git, Git"
+title:  "Git oh Git, Who art thou Git?"
 date:   2014-12-11
 categories: Technical, featured
 ---
 
-What are the best practices associated with using classes vs. ids?
+Today I started my journey to further my web developer career by diving into building rich and beautiful web applications. Phase 0 started on Monday 12/8/14 and we got introuduced to Git, Github &amp; More. As a developer we are always going to be writing code that looks a bit odd to the human eye. Just for starters Git can make code a little more understandable to someone who has never coded or is not familiar with your code. Git also keeps a snapshot of the code changes in a desierd document or set of documents and folders with a easy to read title and description of the change. It also helps makes it easy to collaborate with other developers in the industry and not step on each others toes because git will never erase a change without asking you! Git is most widely used in the command line or terminal but there are quite a few GUI's (Graphical User Interfaces) that you can use to help you make your way around things.
 
 
+Simply put Git is a life saver, I can tell you from personal experience. Let's say we are strolling down the street minding our business when this big cloud with lightning stricts your laptop and fries your hard drive (can you tell this is no longer real?). What to do? You just spent the past 8 hours working on a new feature and never uploaded via boring FTP. This is when you enlist <a href="http://github.com">Github.com</a> becuase even if you were using git and didn't have it on a remote (I learned this as well) repository somewhere it is gone! Github is a safe and secure location to save your git repo and allows other developers to view, question, and contribute to your work.
 
-CSS is a very important part of building a website. CSS is like the interior design of your house what good is a house without paint, shingles, a ceiling etc. if you ask me it is not very good at all but some people are different. Today I am going to explain exactly when and how to use ID's or Classes in your HTML. before I begin about that I feel the need to explain why we add these to the HTML and not the CSS file.
-CSS uses a very easy way to connect to HTML through something called a link. A link tells the HTML to use "This file" for it's CSS. Here is an example:
-
-
-
-```<link rel="stylesheet" type="text/css" href="your-style-sheet.css" />```
-
-
-
-Pretty simple to get the files connected but then how does the the CSS know what to target. This is where classes and ID's come in. In order for use to target a certain element in CSS we need to use the html code such as div, p, h1, h2 etc. In this model we will only be using classes and id's to easily undertsnad. to add a class to your HTML it is as simple as
-
-
-
-```<div class="your-class">Hello World!</div>```
-
-
-and for ID
-
-
-```<div id="your-id">Hello World!</div>```
-
-
-
-You can target classes in CSS with a simple:
-
-
-```.your-class```
-
-And ID
-
-
-```#your-id```
-
-
-
-so now that we know how to add a CSS class and ID and how they talk to eachother let's talk about when to use which one.
-
-
-ID's are almost like a dishwasher you really only need 1 dishwasher in your house. Id's can only be referenced once for each page. ID's should only be used in a couple scenarios:
-
-
-If you are setting a link to be targeted on the same page.
-```<a href="#about">``` This will reference a element id of about and will move you to that portion of the website.
-
-
-Refering to an item that will not be like others and have unique features. Refering to the unique part of ID's.
-
-
-Classes are like the light bulb of your house. Classes are not unique and can be used as many times as you'd like. Classes really come in handy when you are moving thing to left or the right for instance. You can make your CSS look like so:
-
-
-```.right{float:right;}``` This will move an element to the furthest right point and you can add this class to any element you would like on the right side.
-
-
-You can also add multiple classes to 1 element. Like So:
-
-
-```div class="right about-me small"``` This shows multiple clsses by the name of right, about-me and small. A simple space inbetween classes will solve this for you.
-
-
-Moral of the story on classes and ID's is simple. You will use classes a lot more than you will ID's. If the element is completely unique to anything that you will be creating on the site you should use an id. In any other scenario use a class.
+As a newborn DBC Seal Lion I feel like I am really just learning what exactly my feet can do let alone how to crawl or walk! There is some much knowledge packed in these Phaso 0 challenges and I couldn't be more excited. We learned not only about Git this week but we also learned how to use the command line, how to use Github &amp; Twitter and probably the most important to me was how to manage time and become a better overall human. I look forward to all of the cd3oe, lifestyle and mistakes in this very near future and can't wait to meet all of my fellow Sea Lions.

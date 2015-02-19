@@ -9,62 +9,44 @@ categories: Technical, Featured
 Enumerable is simply a collection of methods that iterate through a collection of objects and run the following block. I am sure that went over your head so let me break it down for you. Lets start with iterating this is the act of separating each element and providing it an action is what is called a block. I will give you an example.
 
 
-{% highlight ruby %}
-  arr = ["Hello", "World", "He is crazy", "Wait", "What"]
-  arr.each { |element| puts element }
-{% endhighlight %}
-Alternitevly we could say
-{% highlight ruby %}
-  arr = ["Hello", "World", "He is crazy", "Wait", "What"]
-  arr.each do |element|
-    puts element
-  end
-{% endhighlight %}
+###Arrays
 
-This is saying go through each element in arr which is an array and print each value on to the screen. Now back to the collection of objects which is in this scenario arr it can either be an array or hash. The curly braces after the each method is the block which is creating a temporary variable of <i>element</i> and telling to print each element of the array. This is a great way to make 1 line solutions and have it very human readable.
+  Arrays can contain multiple different values such as strings, integers and even other arrays. Those arrays inside of arrays are considered sub arrays, pretty clever right? Your probably thinking well what how do I use these values or even sperate them. Vey good question and below you will see example 1.1(Empty Hash) and 1.2(Standard Hash).
 
 
-###Group_by
-I will now go through one of my more favorite enumerable methos which is ```group_by```. Is simple ```group_by``` does eaxtly that by the value that you ask for. As ruby explains it
-<blockquote>
-  "Groups the collection by result of the block. Returns a hash where the keys are the evaluated result from the block and the values are arrays of elements in the collection that correspond to the key.
-  &nbsp;
-  If no block is given an enumerator is returned."
-</blockquote>
+  ```my_array = []```
+Example 1.1
+
+  ```my_array = ["A String", 10, ["Sub array string"]]```
+Example 1.2
+
+  As you can see above that I seperated my values inside the array with a simple *,* somehow some wat ruby knows how to seperate them but that goes with everything else ruby does on it's own :). Now that you know how to create an array go have some funa and see if you can find a god use before paragraph 3 when I show you examples.
 
 
-As an example I will group an array and a hash so let's start with an array.
-
-{% highlight ruby %}
-  array = [10,45,18,33,59,78,43,100,8,12,83]
-  array.group_by {|element| element % 2 == 0}
-{% endhighlight %}
-####**Output:**
-{% highlight ruby %}
-  [10,18,78,100,8,12]
-{% endhighlight %}
-
-The syntax is almost identical to the each method we used earlier but we used ```group_by``` instead. What I am asking here is for each element in the array that's modulo (The remainder) is equal to 0. This is a complicated way of saying return each integer that is an even number. There is another method that we could add here to refactor our code. I will explain refactoring later.
-{% highlight ruby %}
-    array.group_by {|element| element.even?}
-  {% endhighlight %}
+  Accessing array values is just as simple as creatinf them. In example 1.3(Accessing array values) I will show you how to do this.
 
 
-the ```.even?``` method returns every number that is even in the given object. This is a great way to make your code easily readible for someone new to your project or new to coding in general. Now I will give you an idea for hashes. Knowing that hashes have accessible keys and values unlike arrays this will give us a little more creative example.
+```my_array[0]```
+Exmaple 1.3
 
-{% highlight ruby %}
-  hash = {"Strawbery" => "fruit", "Potato" => "vegetable", "Orange" => "fruit", "Grape" => "fruit", "Lettuce" => "vegetable"}
-  hash.group_by { |key, value|  value }
-{% endhighlight %}
-####**Output:**
-{% highlight ruby %}
-  {"fruit"=>[["Strawbery", "fruit"], ["Orange", "fruit"], ["Grape", "fruit"]], "vegetable"=>[["Potato", "vegetable"], ["Lettuce", "vegetable"]]}
-{% endhighlight %}
-
-Similarily to the array it grouped our hash by the object we ask. The biggest difference is in the temporary variables we set. In this example I used ```key``` and ```value``` for easy identification. After we say key and value we ask for it to group by similar values. In this example we would see ```fruit=>``` and ```vegetable=>``` these are the like values and we can see that Strawberry, Orange and Grape are all fruits.
+I specifically used this example because I want you to understand that in programming almost all the time you will start couting at 0. If you take a look back at example 1.2 I will break this down for you. "A String" is the first value or [0], the number 10 is the scond value or [1] and so on so forth. I like to remember to start my count at 0 but some people may prefer to take the what I would call real world number and subtract 1. As a programmer we would say well that thought should be refactored, catch my drift? All in all arrays are pretty simple for now but later on down the road I am sure I will have a lot more to say about their complextiy.
 
 
-I am sure you could imagine why this is a good method. It will take a lot of required code and logic and bundle it up into a nice short and readable method. To touch on refactoring real quick. In a simple format refactoring is looking at your initial solution and finding ways to make this easier to read, remove any un neccessary logic, variables or loops. In our industry it impartative for us to write readable code, 9 times out of 10 some one else will eventually take a look at your code and nobody wants to spend hours just trying to understand what you are doing.
+###Hashes
+
+Hashes are a lot like arrays as well, they both have a value but hashes have a more visible key as well. In example 2.1 I am showing you how to create new hash. This will create a a hash with the key and value of *nil*. There are nemours ways to create a hash but in example 2.2 I will show you our most used method so far.
 
 
-I hope you have some time to play around with some enumerables and find great uses for ```group_by``` and ```each```. Just remember if you are trying to write easy to read code always try to remove the ```do``` and ```end``` when there is a enumerable method available.
+```Hash.new```
+Example 2.1
+
+```my_hash = { "Jane Doe" => 10, "John Doe" => 6 }```
+Example 2.2
+
+As you can see the *my_hash* example makes a little more sense to look at so we will reference this for now. You can see here that both the Jane Doe and John Doe are the keys. Which makes the two integers 10 and 6 are the values. In hashes the key and value are seperated by a *=>*. In order to access these values take a look at example 2.3. The semi colon can replace the quotes in this situation and this goes for creating them as well.
+
+
+```grades["Jane Doe"]<span>or</span>grades[:jane Doe]```
+Example 2.3
+
+The biggest difference between hashes and arrays are how they are created obviously but beyond that I am sure you noticed that hashes have a key and value pair rather than just a value. I am sure you can imagine how this will be helpful. Arrays are also an ordered list where as hash values are related to their key. Though not as fun as hashes, arrays have keys as well but they are integer based meaning the numbers I showed you earlier are the keys.
