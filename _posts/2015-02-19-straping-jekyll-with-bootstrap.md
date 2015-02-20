@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stay Starped with jejyll and twitter bootstrap"
+title: "Stay Starped with Jekyll and Twitter Bootstrap"
 date: 2015-02-19
 author: Curtis Seaton
 categories: Technical
@@ -16,9 +16,8 @@ The CSS on this was very simple with bootstrap. I used about 120 lines of CSS fo
 
 Next issue was the mobile friendly CSS, this wasn't as bad As doing it from scratch because [Twitter Bootstrap][Twitter Bootstrap] has already thought of this for us this is where the html classes $col-md$, $col-sm$, $col-lg$ these have to do with the way the responsive design will be handled. This brings me to my next issue with the skills section, On a vertical iPad they were stacking on top of each other which I was not a fan of but for some reason in the landscape view it was fine, great get out the hood of docs again. Duh, $col-sm$ and $col-md$ this has to play with the CSS so if we want them to be in columns on a sm(Small) device then use the $col-sm$, genius!
 
-###[Google Fonts][Google Fonts]
+I also used [Google Fonts][Google Fonts] & [Font Awesome][Font Awesome]
 
-###[Font Awesome][Font Awesome]
 
 By the end of everything I was very satisfied with the mobile and the desktop versions. Images are crisp, text readable, color scheme matching but what about the blog, who wants to make a html post every time a new blog is due or add each link every time, nope ok back to Jekyll, I felt I did my homepage pretty quick so why not take a fresh look.
 
