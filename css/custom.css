@@ -120,6 +120,13 @@ footer{
 }
 
 /*====================
+  Contact Me
+=====================*/
+.contact-form, .contact-form .col-sm-12, .contact-form .col-sm-3{
+  margin: 0 auto;
+  float: none !important;
+}
+/*====================
   Footer
 =====================*/
 
