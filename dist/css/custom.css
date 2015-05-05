@@ -263,7 +263,7 @@ img.me{
 .portfolio .work-list{
   margin: 0 auto;
 }
-.portfolio .work-list li{
+.portfolio .work-list > li{
   margin: 6em 0;
 }
 .portfolio .work-list .work{
@@ -306,7 +306,12 @@ img.me{
   margin: 0 0 2.5em 0;
   font-size: 1.2em;
 }
-
+.portfolio .work-list .details .tasks{
+  margin: 0 0 1.5em 0;
+}
+.portfolio .work-list .details .tasks li{
+  font-size: 1.2em;
+}
 .portfolio .project-link{
   margin: 0 auto;
   width: 300px;
@@ -356,8 +361,7 @@ img.me{
   color: #009ec3;
 }
 .contact-form button i{
-  position: relative;
-  right: 60px;
+  margin-right: 0.8em;
 }
 .contact-form textarea{
   height: 150px;
