@@ -110,7 +110,7 @@ img.me{
   Main Content
 =====================*/
 .main{
-  background-image: url(../../imgs/large-bg-4.jpg);
+  background-image: url(../../imgs/large-bg.jpg);
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -222,6 +222,11 @@ img.me{
   margin: 0;
 }
 
+.featurette-divider{
+  width:100%;
+  color: #E9E9E9
+}
+
 /*=====================
   Skills
 =====================*/
@@ -258,10 +263,27 @@ img.me{
 .portfolio .work-list{
   margin: 0 auto;
 }
+.portfolio .work-list li{
+  margin: 6em 0;
+}
 .portfolio .work-list .work{
-  border: 1px solid #FF0000;
-  margin: 0 0 12em 0;
   height: 450px;
+  padding: 0;
+  overflow: hidden;
+  background-image: url('../../imgs/macbook.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.portfolio .work-list .work .screen{
+  height: 370px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.portfolio .work-list .work .screen img{
+  width: 600px;
+  margin: 0 auto;
+  display: block;
+
 }
 .portfolio .work-list .details .subtitle{
   font-size: 3em;
@@ -289,6 +311,12 @@ img.me{
   margin: 0 auto;
   width: 300px;
   text-align: center;
+}
+.portfolio .project-link button{
+  margin: 1em 0;
+}
+.portfolio .project-link button i{
+  margin-right: 10px;
 }
 .portfolio .project-link a:hover{
   text-decoration: none;
