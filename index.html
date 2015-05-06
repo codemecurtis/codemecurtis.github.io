@@ -292,26 +292,6 @@
             <div class="col-sm-1"></div>
         </div>
       </div>     -->
-      <script>
-      $(document).ready(function() {
-        
-        $.ajax({
-          url: 'https://api.github.com/repos/infin80design/dinnerwinner/commits?author=infin80design',
-          type: 'GET'
-        })
-        .done(function(response) {
-          console.log("success");
-          debugger
-          console.log(response)
-          $('.commits').html(response.length + 'Commits')
-        })
-        .fail(function() {
-          console.log("error");
-        })
-      
-      });
-      </script>
-
       <hr class="featurette-divider">
 
       <div class="row featurette contact" id="contact">
