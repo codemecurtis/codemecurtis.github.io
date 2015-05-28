@@ -7,6 +7,7 @@ categories: Technical, CSS, Front-End
 ---
 
 # CSS Media Queries
+  CSS media queries have been one of the hardest things for me to remember. I mean there are only 100 different devices to design for these days, you know nothing to tough. :) This is just a very basic resource for me and other developers to refer to. As devices are released I will do my best to keep this post updated. Hope this helps and <a href="mailto:codemecurtis@gmail.com">feedback</a> is always welcome.
 
  <a href="#">iPhone</a> ~ <a href="#ipad">iPad</a> ~ <a href="#macbook">Macbook</a> ~ <a href="#apple-watch">Apple Watch</a> ~ <a href="#galaxy">Galaxy</a> ~ <a href="#galaxy-tab">Galaxy Tabs</a>
 

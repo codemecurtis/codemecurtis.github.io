@@ -6,3 +6,4 @@ author: Curtis Seaton
 categories: Technical, Rails
 ---
 
+Sorry still working on this post.
