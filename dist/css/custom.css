@@ -267,20 +267,20 @@ img.me{
   margin: 6em 0;
 }
 .portfolio .work-list .work{
-  height: 450px;
+  /*height: 450px;*/
   padding: 0;
   overflow: hidden;
-  background-image: url('../../imgs/macbook.png');
+  background-image: url('../../imgs/browser.png');
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .portfolio .work-list .work .screen{
-  height: 370px;
-  margin-top: 30px;
+  /*height: 370px;*/
+  margin-top: 25px;
   overflow: hidden;
 }
 .portfolio .work-list .work .screen img{
-  width: 73%;
+  width: 100%;
   margin: 0 auto;
   display: block;
 
