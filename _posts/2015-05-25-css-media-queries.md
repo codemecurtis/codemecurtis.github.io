@@ -1,3 +1,11 @@
+---
+layout: post
+title: "The beloved media queries"
+date: 2015-05-28
+author: Curtis Seaton
+categories: Technical, CSS, Front-End
+---
+
 # CSS Media Queries
 
  <a href="#">iPhone</a> ~ <a href="#ipad">iPad</a> ~ <a href="#macbook">Macbook</a> ~ <a href="#apple-watch">Apple Watch</a> ~ <a href="#galaxy">Galaxy</a> ~ <a href="#galaxy-tab">Galaxy Tabs</a>
