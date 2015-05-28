@@ -70,8 +70,8 @@ img.me{
   border: none;
 }
 
-.navbar-inverse .navbar-nav>li>a{
-  color: #FFFFFF;
+.navbar-nav li a:hover{
+  border-bottom: 2px solid #FFFFFF;
 }
 
 .navbar-inverse .navbar-toggle{
