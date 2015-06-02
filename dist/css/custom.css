@@ -1,5 +1,5 @@
 body{height: 100%}
-a{color: #41b7d8}
+a, .to-top i{color: #41b7d8}
 button:focus {outline:0;}
 .subtitle{margin: 0;}
 ul, li{list-style-type: none }
@@ -55,9 +55,17 @@ img.me{
 /*=====================
   Navigation
 =====================*/
+.navbar-wrapper{
+  /*position: fixed;*/
+  margin: 0;
+  padding-top: 20px;
+  background-color: transparent;
+}
 
 .navbar-nav{
   float: right;
+  position: relative;
+  top:20px;
 }
 
 .navbar-nav li{
@@ -72,6 +80,10 @@ img.me{
 
 .navbar-nav li a:hover{
   border-bottom: 2px solid #FFFFFF;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+  background-color: transparent;
 }
 
 .navbar-inverse .navbar-toggle{
@@ -104,7 +116,6 @@ img.me{
   font-family: "Raleway";
   opacity: 0.3;
   text-shadow: 2px 2px 2px #FFFFFF;
-  width: 80%;
 }
 /*=====================
   Main Content
@@ -314,7 +325,7 @@ img.me{
 }
 .portfolio .project-link{
   margin: 0 auto;
-  width: 300px;
+  width: 250px;
   text-align: center;
 }
 .portfolio .project-link button{
@@ -333,6 +344,7 @@ img.me{
 .contact-form, .contact-form .col-sm-12, .contact-form .col-sm-3{
   margin: 15px auto;
   float: none !important;
+  text-align: center;
 }
 .contact-form a{
   float: none;
@@ -376,3 +388,15 @@ footer{
   top: 30px;
   margin: 0 10px;
 }
+.to-top{
+  position: fixed;
+  text-align:center;
+  background-color: #555555;
+  padding: 10px;
+  width: auto;
+  bottom: 0;
+  right: 10px;
+}
+.to-top i{
+  font-size: 1.5em;
+} 

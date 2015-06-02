@@ -52,15 +52,15 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="#">Code Me Curtis</a>
-              <p class="navbar-sub-brand">The Portfolio of Curtis Seaton</p>
-            </div>
+<!--               <p class="navbar-sub-brand">The Portfolio of Curtis Seaton</p>
+ -->            </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="home-btn"><a href="#">Home</a></li>
                 <!-- <li><a href="#skills">Skills</a></li> -->
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li class="portfolio-btn"><a href="#portfolio">Portfolio</a></li>
                 <li><a href="/blog.html">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="contact-btn"><a href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -86,8 +86,8 @@
           <a href="https://www.facebook.com/curtis.seaton.3" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
           <a href="https://twitter.com/CodeMeCurtis" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
           <a href="https://www.linkedin.com/in/codemecurtis" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-          <a href="mailto:infin80design@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
-          <a href="https://github.com/infin80design" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+          <a href="mailto:codemecurtis@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x"></i></a>
+          <a href="https://github.com/codemecurtis" target="_blank"><i class="fa fa-github fa-2x"></i></a>
         </div>
 
         <div class="col-md-1"></div>
@@ -127,7 +127,7 @@
                 <a href="https://github.com/infin80design/dinnerwinner" target="_blank"><button><i class="fa fa-github"></i>View Project Code</button></a>
               </div>
             </div>
-            <div class="col-md-4 work right">
+            <div class="col-md-4 work">
               <div class="screen">
                 <img src="imgs/projects/dinnerwinner.jpg" alt="">
               </div>
@@ -197,7 +197,7 @@
                 <a href="http://natbluecre.com" target="_blank"><button><i class="fa fa-bolt"></i>View Project Live</button></a>
               </div>
             </div>
-            <div class="col-md-4 work right">
+            <div class="col-md-4 work">
               <div class="screen">
                 <img src="imgs/projects/natblue.jpg" alt="">
               </div>
@@ -301,18 +301,51 @@
         <div class="contact-form col-sm-6">
           <p>As an ambitious software engineer always hungry for growth, I strive for using open source technologies. I spent 4 years working with HTML &amp; CSS and I have recently started focusing on user's experience and interface more.</p>
           <p>I love to ride bikes, play ping pong, and talk code. I think I am one of the only engineers in the world that doesn't live off caffine but I will gladly join you for a hot chocolate anytime of the day.</p>
-            <a class="col-sm-6" href="mailto:infin80design@gmail.com"><button class="col-sm-12" type="submit"><i class="fa fa-reply"></i>Contact / Hire Me</button></a>
+            <button class="col-sm-12" type="submit">
+              <a class="col-sm-6" href="mailto:infin80design@gmail.com">
+                <i class="fa fa-reply"></i>Contact / Hire Me
+              </a>
+            </button>
         </div>
       </div>
 
       <!-- FOOTER -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p class="pull-right to-top"><i class="fa fa-arrow-up"></i></p>
         <p>&copy; 2015 Code Me Curtis &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
       <!-- Bootstrap core JavaScript
       ================================================== -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+      <script type="text/javascript">
+      var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
+
+      new ScrollMagic.Scene({ triggerElement: "#portfolio", offset: 470 })
+      .setClassToggle('.portfolio-btn', 'active')
+      .addTo(controller)
+
+      new ScrollMagic.Scene({ triggerElement: "#contact", offset: 210 })
+      .setClassToggle('.contact-btn', 'active')
+      .addTo(controller)
+      </script>
+
+      <script type="text/javascript">
+        $(".home-btn, .to-top").click(function(event) {
+          $.scrollTo('body', 800)
+        });
+
+        $(".portfolio-btn").click(function(){
+          $.scrollTo('#portfolio', 600);
+        });
+
+        $(".contact-btn").click(function() {
+          $.scrollTo("#contact", 600);
+        });
+      </script>
       <!-- Placed at the end of the document so the pages load faster -->
       <script src="dist/js/bootstrap.min.js"></script>
       <!-- <script src="dist/js/docs.js"></script> -->
